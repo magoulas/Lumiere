@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+<title>Lumiere | Movies</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3mobile.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="css/ProductPageAndroidStyle.css" rel="stylesheet">
+<link href="css/snackbar.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+
+<head>
+        <link rel="stylesheet" type="text/css" href="slickHomeAndroid/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slickHomeAndroid/slick-theme.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<div onclick="closeSidebar()" id="blurr"></div>
+
+<nav class="sidebar w3-bar-block w3-card" id="mySidebar" style="width:300px;">
+<div class="theme">
+  <span  class="w3-button w3-display-topright w3-large"><button class="w3-bar-item w3-button w3-xlarge drawerBtn" onclick="closeSidebar()">&#9776;</button></span>
+  <br>
+  <div class="w3-padding w3-center pos">
+    <div><img id="userphoto" src="icons/UserIcon.png" alt="avatar" width="80px" height="70px" ></div>
+    <div id="Amy"><p><u>AmyLee92</u></p></div>
+    
+  </div>
+  <hr>
+</div>
+
+
+<a id="nav1" class="w3-bar-item w3-button" href="HomePageAndroid.html">HOME</a>
+<a id="nav2" class="w3-bar-item w3-button" onclick="toast();">MOVIES</a>
+<a id="nav3" class="w3-bar-item w3-button" onclick="toast();">SHOWS</a>
+<a id="nav4" class="w3-bar-item w3-button" onclick="toast();">STREAMS</a>
+<a id="nav5" class="w3-bar-item w3-button" onclick="toast();">NEWS & EVENTS</a>
+
+<div class="iconsdw">
+        <span id="web"><a href="homeResponsive.html"><img src="icons/web.png "></a></span>
+        <span id="insta"><a onclick="toast();"><img src="icons/instagram.png " width="30px" height="30px"></a></span>
+        <span id="fb"><a onclick="toast();"><img src="icons/facebook.png " width="30px" height="30px"v></a></span>
+        <span id="tw"><a onclick="toast();"><img src="icons/twitter.png " width="30px" height="30px"></a></span>
+    </div>
+</nav>
+
+<header class="w3-bar w3-card">
+     
+        <button id="drb" class="w3-bar-item w3-button w3-xlarge drawerBtn" onclick="openSidebar()">&#9776;</button>
+        <h1 class="w3-bar-item"><a href="HomePageAndroid.html"><img id="logo" src="icons/Logo_figma.png " width="80px"></a></h1>
+        <div class = "icons"><a class="iconButtons" onclick="toast()"><img width="25px" src="icons/searchWhite.png"></a>
+                             <a onclick="toast();" class="iconButtons"><img width="25px" src="icons/cast.png"></a>
+                             <a onclick="toast();" class="iconButtons"><img width="20px" src="icons/notificationsWhite.png"></a> 
+        </div>
+    
+</header>
+
+
+
+    <div >
+        <div id="playerContainer">
+            <button id="trailb"  class="videoPlayButton"  onclick="playVid(this)" type="button"><img width="100px" src="icons/playButton.png"/></button>
+            
+            <div ><button id="heartBtn"><img id="heart" src="icons/heart.png"></button></div>
+
+            <div id="percentage"  style="margin-top:15px; color:#f2f2f2; margin-left: 200px; display:inline-block; position:absolute;">
+                <p style="font-size: 12px;">86%</p>
+            </div>
+                <video id="trailer"  width="360px" poster="icons/trailerThumb.png" > 
+                    <source src="darkest.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+                <div id="starPos">
+                
+
+                    <button id="1" class="star"><img width="20px" id="star1" src='icons/starChecked.png'></button>
+                    <button id="2" class="star"><img width="20px" id="star2" src='icons/starChecked.png'></button>
+                    <button id="3" class="star"><img width="20px" id="star3" src='icons/starChecked.png'></button>
+                    <button id="4" class="star"><img width="20px" id="star4" src='icons/star.png'></button>
+                    <button id="5" class="star"><img width="20px" id="star5" src='icons/star.png'></button>
+                    
+                
+            </div> 
+            <div id="watched"> 2h 17min<br><span id="un">Un</span>watched</div>
+
+        </div>
+
+
+        <div style="margin-left: 10px;"><p id="movTitles"><span id="movMainTitle">Darkest Hour</span><br>2018</p></div>
+        <div style="margin-left: 10px;">
+            <p id="movDescriptionHidden">During the early days of World War II, the fate of Western Europe hangs on the newly appointed British Prime Minister Winston Churchill, who must decide whether to negotiate with Adolf Hitler, or fight on against incredible odds. A thrilling and inspiring true story begins at the precipice of World War II as, within days of becoming Prime Minister of Great Britain, Winston Churchill (Academy Award nominee Gary Oldman) must face one of his most turbulent and defining trials.</p>
+            <button id="arrowHidden"><img src="icons/arrowUp.png" width="30px;"></button>
+        </div>
+        <div class="sidebar-box" id="box" style="margin-left: 10px;">
+            <p id="movDescription">During the early days of World War II, the fate of Western Europe hangs on the newly appointed British Prime Minister Winston Churchill, who must decide whether to negotiate with Adolf Hitler, or fight on against incredible odds. A thrilling and inspiring true story begins at the precipice of World War II as, within days of becoming Prime Minister of Great Britain, Winston Churchill (Academy Award nominee Gary Oldman) must face one of his most turbulent and defining trials.</p>
+            <p id="read-more" class="read-more"><button id="downarrow"><img id="downarrow" width="30px;" src="icons/arrowDown.png"></button></p>
+            
+        </div>
+
+
+        <div style="margin-left: 10px; margin-top: 30px;">
+                <p>
+                    <span class="grey">Genres: </span > <a href="#"  onclick="toast()"><u>Biography</u></a><span class="grey"> , </span><a href="#" onclick="toast()"><u>Drama</u></a><span class="grey"> , </span><a href="#"  onclick="toast()"><u>History</u></a><span class="grey"> , </span><a href="#"  onclick="toast()"><u>War</u></a><br>
+                    <span class="grey">Director: </span > <a href="#"   onclick="toast()"><u>Joe Wright</u></a><br>
+                    <span class="grey">Cast: </span > <a href="#"   onclick="toast()"><u>Gary Oldman</u></a><span class="grey"> , </span><a href="#"  onclick="toast()"><u>Lily James</u></a><span class="grey"> , </span><a href="#"  onclick="toast()"><u>Kristin Scott...</u></a>
+                </p>
+        </div>
+        
+    </div>
+
+<!--Carousels-->
+
+    <div class="carouselContainer">
+            <div><img class= "cover1 blurr3"  src="icons/Rectangle 2.png"></div>
+            <div><img class= "cover1 blurr2"  src="icons/Rectangle 2.png"></div>
+            <div id="trendingMovies">Media Gallery</div>
+                <div id="carousel" class="your-class">
+                    <div><a >
+                        <div ><img onclick="toast()" class= "cover"  src="Covers/darkest trailer android.png"></div>
+                        <div><p>Movie Trailer</p></div>
+                    </a>
+                    </div>
+                    <div><a  >
+                        <div ><img onclick="toast()" class= "cover"  src="media/media1.png"></div>
+                    </a>
+                    </div>
+                    <div><a  >
+                        <div><img onclick="toast()" class= "cover"  src="media/media2.png"></div>                    
+                    </a>
+                    </div>
+                    <div><a >
+                        <div ><img onclick="toast()" class= "cover"  src="media/media3.png"></div>                     
+                    </a>
+                    </div>
+                    <div><a >
+                        <div ><img onclick="toast()" class= "cover"  src="media/media4.png"></div>                       
+                    </a>
+                    </div>
+                    <div><a >
+                        <div ><img onclick="toast()" class= "cover"  src="media/media5.png"></div>                       
+                    </a>
+                    </div>
+                    <div><a >
+                        <div ><img onclick="toast()" class= "cover"  src="media/media6.png"></div>                       
+                    </a>
+                    </div>
+                </div>
+            
+            
+            
+            
+            
+                <div id="trendingShows">Related Content</div>
+                <div id="carousel1" class="your-class1">
+                    <div><a href="ProductPageAndroid.html">
+                        <div><img class= "cover"  src="Covers/Pacific Rim Cover.jpg"></div>
+                        <p id="wolo123">Pacific Rim</p>
+                        <p id="wolo321">2018</p>
+                        <p id="wolo111">86%</p>
+                    </a>
+                    </div>
+                    <div><a href="ProductPageAndroid.html">
+                        <div><img class= "cover"  src="Covers/Atomic Blonde.jpeg"></div>
+                        <p id="wolo123">Atomic Blonde</p>
+                        <p id="wolo321">2017</p>
+                        <p id="wolo111">86%</p>
+                    </a>
+                    </div>
+                    <div><a href="ProductPageAndroid.html">
+                        <div><img class= "cover"  src="Covers/Blade Runner 2049 Cover.jpg"></div>
+                        <p id="wolo123">Blade Runner 2049</p>
+                        <p id="wolo321">2018</p>
+                        <p id="wolo111">86%</p>
+                    </a>
+                    </div>
+                    <div><a href="ProductPageAndroid.html">
+                        <div><img class= "cover"  src="Covers/Dunkirk.jpg"></div>
+                        <p id="wolo123">Dunkirk</p>
+                        <p id="wolo321">2018</p>
+                        <p id="wolo111">86%</p>
+                    </a>
+                    </div>
+                    <div><a href="ProductPageAndroid.html">
+                        <div><img class= "cover"  src="Covers/Pulp Fiction Cover.jpg"></div>
+                        <p id="wolo123">Pulp Fiction</p>
+                        <p id="wolo321">2020</p>
+                        <p id="wolo111">86%</p>
+                    </a>
+                    </div>
+                </div>
+            
+            
+            
+            
+            </div>
+
+<!--Rest of the world-->
+
+
+<div id="snackbar">Function Unavailable</div>
+
+
+<footer>
+  <span id="Back"><a  onclick="toast();"><img src="icons/arrow-left.png "></a></span>
+  <span id="Home"><a href="HomePageAndroid.html"><img src="icons/home.png "></a></span>
+</footer>
+
+
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slickHomeAndroid/slick.min.js"></script>
+
+
+
+
+<script>
+closeSidebar();
+function openSidebar() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("blurr").style.display="block";
+    document.getElementById("drb").style.color="#F2C94C";
+}
+function closeSidebar() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("blurr").style.display="none";
+    document.getElementById("drb").style.color="#f2f2f2";
+}
+</script>
+
+
+
+
+<script> 
+        var vid = document.getElementById("trailer");
+        var mov = document.getElementById("movie");
+        
+        function playVid(button) { 
+            button.style.visibility = "hidden";
+            vid.play(); 
+        } 
+
+        function playVid2(button) { 
+            button.style.visibility = "hidden";
+            mov.play(); 
+        } 
+        
+
+
+        
+        $('#trailer').hover(function toggleControls() {
+            console.log("in");
+            if (this.hasAttribute("controls")) {
+            this.removeAttribute("controls");                
+            } 
+            else {
+                if (! trailer.paused){
+                    this.setAttribute("controls", "controls");}
+            }
+        });
+
+
+        $('#trailer').on('pause', function() {
+        
+            document.getElementById("heartBtn").style.visibility="visible";
+            document.getElementById("percentage").style.visibility="visible";
+            document.getElementById("starPos").style.visibility="visible";
+            if (this.hasAttribute("controls")) {
+            this.removeAttribute("controls");                
+            } 
+            
+            var playbt = document.getElementById("trailb");
+            playbt.style.visibility = "visible";
+            
+
+        });
+
+
+        $('#movie').hover(function toggleControls() {
+            
+            if (this.hasAttribute("controls")) {
+            this.removeAttribute("controls");                
+            } 
+            else {
+            if (! movie.paused){
+            this.setAttribute("controls", "controls");}
+            }
+        });
+
+
+         $('#movie').on('pause', function() {
+
+            
+            document.getElementById("usrMovInfo").style.visibility="visible";
+
+            if (this.hasAttribute("controls")) {
+            this.removeAttribute("controls");                
+            } 
+    
+            var playbt2 = document.getElementById("movb");
+            playbt2.style.visibility = "visible";
+            
+    
+
+            });
+
+
+        $('#trailer').on('play', function() {
+
+            document.getElementById("heartBtn").style.visibility="hidden";
+            document.getElementById("percentage").style.visibility="hidden";
+            document.getElementById("starPos").style.visibility="hidden";
+            document.getElementById("un").style.display="none";
+           
+
+        });
+
+
+        $('trailb').on('hover', function(){
+
+            (document).getElementById("trailerPlay").src = "icons/playButtonSelected.png";
+
+        });
+    </script>
+
+
+
+    <script>
+    
+        $("button#downarrow").click(function(){
+                
+
+
+
+                
+                //document.getElementById("read-more").style.display = "none";
+                //document.getElementById("movDescription").style.display = "none";
+                document.getElementById("box").style.display = "none";
+                document.getElementById("movDescriptionHidden").style.display = "block";
+                document.getElementById("arrowHidden").style.display = "block";
+                console.log("hjk")
+
+
+        
+        });
+
+
+
+        $("button#arrowHidden").click(function(){
+                
+
+
+
+                
+               
+                document.getElementById("box").style.display = "block";
+                document.getElementById("movDescriptionHidden").style.display = "none";
+                document.getElementById("arrowHidden").style.display = "none";
+                console.log("hjk")
+
+
+        
+        });
+
+
+
+
+
+
+
+
+        </script>
+
+
+
+
+        <script>
+            function toast() {
+                var x = document.getElementById("snackbar");
+                x.className = "show";
+                setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+            }
+        </script>
+
+
+
+
+<script  type="text/javascript">
+    $(document).ready(function(){ 
+    $('.your-class').slick({
+        arrows:false,
+        dots:true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '30px',
+            slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+            aarrows: false,
+            dots:true,
+            slidesToShow: 2,
+        slidesToScroll: 3  
+            }
+        }
+        ]
+    });
+});
+
+
+  </script>
+
+<script  type="text/javascript">
+    $(document).ready(function(){ 
+        var flag2 = 1;
+
+
+
+    $('.your-class1').slick({
+        arrows:false,
+        dots:true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '30px',
+            slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                arrows: false,
+            dots:true,
+            slidesToShow: 2,
+        slidesToScroll: 3  
+            }
+        }
+        ]
+    });
+
+
+
+
+
+    $("button#heartBtn").click(function(){
+                
+                if(flag2 == 0) {
+                    $("#heart").attr("src","icons/heart.png");
+                    flag2 = 1;
+                }
+                else if(flag2 == 1) {
+                    $("#heart").attr("src","icons/heartChecked.png");
+                    flag2 = 0;
+                }
+             });
+});
+
+
+  </script>
+
+<script>
+    $(".star").click(function(){
+    
+        var num = this.id;
+    
+        
+        for(i = 1; i <= 5; i++) {
+            if($("#star" + String(i)).attr('src') === 'icons/starChecked.png'){
+                $("#star" + String(i)).attr('src','icons/star.png');
+            }
+        
+        } 
+    
+    
+        for(i = 1; i <= num; i++) { 
+        
+            $("#star" + String(i)).attr('src','icons/starChecked.png');
+        }
+    
+    
+        
+        console.log("enter");
+    
+    
+    
+    });
+    
+    </script>
+
+
+
+
+
+
+</body>

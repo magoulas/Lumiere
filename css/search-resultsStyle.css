@@ -1,0 +1,323 @@
+div a:hover{
+    color: #F2C94C;
+}
+
+a{
+    outline:none;
+}
+
+#wolo{
+    position: relative;
+    max-width: 100%;
+    height: 68px;
+    left: 0px;
+    top: 76px;
+    background-color: #444F59;
+    float: none; 
+    width: 100%;
+}
+
+.center_carousels{
+    position: relative;
+    top:100px;
+    margin-left: 0%;
+    width: 100%; 
+    height: 450px;
+}
+
+#carousel{
+    position: relative;
+    left:8%;
+    width:1750px;
+    top: 50px;
+}
+
+#carousel1{
+    position: relative;
+    left:8%;
+    width:1750px;
+    top: 50px; 
+    margin-bottom: 100px;
+}
+
+#carousel2{
+    position: relative;
+    left:8%;
+    width:1750px;
+    top: 50px; 
+    margin-bottom: 120px;
+}
+
+.icons{
+    width: 220px;
+    height: 388px;
+}
+
+
+
+.navbar {
+    position: relative;
+    margin:auto;
+    width:1110px;
+    height: 68px;
+    background-color: #444F59;
+    text-align: center;
+}
+
+
+.dropbtn {
+    position: absolute;
+    top:-15px;
+    left:-100px;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    padding: 0px;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+#change1{
+    position: absolute;
+    width: 60px;
+    left:-10px;
+}
+
+#change2{
+    position: absolute;
+    width: 60px;
+    left:-50px; 
+}
+
+#change3{
+    position: absolute;
+    width: 60px;
+    left:0px; 
+}
+
+#belaki3{
+    position: absolute;
+    left:85px;
+
+}
+
+#change4{
+    position: absolute;
+    left:-10px;
+}
+
+#lang{
+    position: absolute;
+    left:-140px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    outline: none;
+    background-color: transparent;
+}
+.label{
+    font-size: 24px;
+    color: #F2F2F2;
+}
+.arrow {
+    position: absolute;
+    left:50px;
+    background-color: #444F59;
+    color: white;
+    margin-right: 0px;
+    margin-left:20px;
+    border: none;
+    cursor: pointer;
+}
+
+.arrow:hover, .arrow:focus {
+    background-color: #444F59;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    text-align: left;
+    display: none;
+    position: absolute;
+    top:30px;
+    left:-100px;
+    background-color: #444f59;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    opacity: 0.8;
+}
+
+
+
+.dropdown-content button {
+    text-align:left;
+	width:100%;
+    background-color: #444F59;
+    color:white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    outline:0;
+    border:none;
+}
+
+
+
+.down{
+    margin-top:0.5%;
+}
+
+.dropdown-content button:hover {background-color: #212121}
+
+.show {
+    display:block;
+}
+
+
+#magnGlass{
+    color:#F2C94C;
+}
+
+.results{
+    margin-left: 8%;
+    display: inline;
+    font-size: 40px;
+    color: #F2F2F2;
+}
+
+.search{
+    display: inline;
+    font-size: 40px;
+    color: #F2C94C;
+}
+
+.size_matters{
+    margin-left: 8%;
+    margin-top: 4%;
+    margin-bottom: -2%;
+    font-size: 36px;
+    color: #F2F2F2;
+}
+
+#top_space{
+    margin-top: 10%;
+}
+
+
+.cover {
+    width: 218.75px;
+    height: 292px;
+    float: left;
+}
+
+.cover1 {
+    width: 218.75px;
+    height: 292px;
+    float: left;
+}
+
+.blurr1{
+    position: absolute;
+    width: 75px;
+    height:330px;
+    top:460px;
+    left:1828px;
+    filter:blur(9px);
+    opacity: 1;
+    z-index:1;
+    fill:black;
+    
+}
+
+.blurr2{
+    position: absolute;
+    width: 75px;
+    height:330px;
+    top:1130px;
+    left:1828px;
+    filter:blur(9px);
+    opacity: 1;
+    z-index:1;
+    fill:black;
+    
+}
+
+.blurr3{
+    position: absolute;
+    width: 75px;
+    height:330px;
+    top:1790px;
+    left:1828px;
+    filter:blur(9px);
+    opacity: 1;
+    z-index:1;
+}
+
+.cover:hover{
+    border: 2px solid #F2C94C;
+}
+
+#wolo123{
+    position: absolute;
+    white-space: nowrap; 
+    width: 220px;
+    text-overflow: ellipsis; 
+    overflow: hidden;
+    top:310px;
+    font-size: 30px;
+    color: #F2F2F2;
+}
+
+#wolo321{
+    position: absolute;
+    top:360px;
+    font-size: 20px;
+    color: #f2f2f2;
+}
+
+#wolo111{
+    position: absolute;
+    top:360px;
+    margin-left:180px;
+    font-size: 20px;
+    color: #6FCF97;
+}
+
+#wolo123:hover{
+    color: #F2C94C;
+}
+
+
+#myBtn {
+    /* Hidden by default */
+   position: fixed; /* Fixed/sticky position */
+   visibility: hidden;
+   right: 900px;
+   bottom: 74px;
+   z-index: 99; /* Make sure it does not overlap */
+   border: none; /* Remove borders */
+   outline: none; /* Remove outline */
+   background: transparent; /* Set a background color */
+   cursor: pointer; /* Add a mouse pointer on hover */
+   padding: 15px; /* Some padding */
+   border-radius: 10px; /* Rounded corners */
+   font-size: 18px; /* Increase font size */
+}
+#myBtn:focus {
+   outline: 0;
+}
+.back-to-top {
+   width: 74px;
+   height: 74px;
+}
+
+.width1{
+    width:260px;
+}

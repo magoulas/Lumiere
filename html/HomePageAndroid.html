@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+<title>iLumiere | Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3mobile.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="css/HomePageAndroidStyle.css" rel="stylesheet">
+<link href="css/snackbar.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+
+
+
+<head>
+<div id="everything">
+        <link rel="stylesheet" type="text/css" href="slickHomeAndroid/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slickHomeAndroid/slick-theme.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<div onclick="closeSidebar()" id="blurr"></div>
+
+
+
+<nav class="sidebar w3-bar-block w3-card" id="mySidebar" style="width:300px;">
+<div class="theme">
+  <span class="w3-button w3-display-topright w3-large"><button class="w3-bar-item w3-button w3-xlarge drawerBtn" onclick="closeSidebar()">&#9776;</button></span>
+  <br>
+  <div class="w3-padding w3-center pos">
+    <div ><img  onclick="toast();" id="userphoto" src="icons/UserIcon.png" alt="avatar" width="80px" height="70px" ></div>
+    <div id="Amy"><a onclick="toast();"><p><u>AmyLee92</u></p></a></div>
+    
+  </div>
+  <hr>
+</div>
+
+
+<a id="nav1" class="w3-bar-item w3-button" href="HomePageAndroid.html">HOME</a>
+<a id="nav2" class="w3-bar-item w3-button" onclick="toast();">MOVIES</a>
+<a id="nav3" class="w3-bar-item w3-button" onclick="toast();">SHOWS</a>
+<a id="nav4" class="w3-bar-item w3-button" onclick="toast();">STREAMS</a>
+<a id="nav5" class="w3-bar-item w3-button" onclick="toast();">NEWS & EVENTS</a>
+
+<div class="iconsdw">
+    <span id="web"><a href="homeResponsive.html"><img src="icons/web.png "></a></span>
+    <span id="insta"><a onclick="toast();"><img src="icons/instagram.png " width="30px" height="30px"></a></span>
+    <span id="fb"><a onclick="toast();"><img src="icons/facebook.png " width="30px" height="30px"v></a></span>
+    <span id="tw"><a onclick="toast();"><img src="icons/twitter.png " width="30px" height="30px"></a></span>
+</div>
+</nav>
+
+<header class="w3-bar w3-card">
+     
+        <button id="drb" class="w3-bar-item w3-button w3-xlarge drawerBtn" onclick="openSidebar()">&#9776;</button>
+        <h1 class="w3-bar-item"><a href="HomePageAndroid.html"><img id="logo" src="icons/Logo_figma.png " width="80px"></a></h1>
+        <div class = "icons"><a class="iconButtons" onclick="toast()"><img width="25px" src="icons/searchWhite.png"></a>
+                             <a onclick="toast()" class="iconButtons"><img width="25px" src="icons/cast.png"></a>
+                             <a onclick="toast()" class="iconButtons"><img width="20px" src="icons/notificationsWhite.png"></a > 
+        </div>
+    
+</header>
+
+<!-- Carousels-->
+<div id="radio"><img src="icons/ic_radio_button_checked_black_24px.png"></div>
+<div id="lvd">Live News Feed:</div>
+<div id="carousel2" class="your-class2" >
+        <div class="wolo333"><a href="#" onclick="toast()">
+            <p><u>Game of Thrones Season 8, new photos.</u></p>
+        </a>
+        </div>
+        <div class="wolo333"><a href="#" onclick="toast()">
+            <p><u>Cannes Festival Nominees 2018.</u></p>
+        </a>
+        </div>
+        <div class="wolo333"><a href="#" onclick="toast()">
+            <p><u>Gary Oldman Oscar Speech.</u></p>
+        </a>
+        </div>
+        <div class="wolo333"><a href="#" onclick="toast()">
+            <p><u>Holywood goes #indie.</u></p>
+        </a>
+        </div>
+        <div class="wolo333"><a href="#" onclick="toast()">
+            <p><u>Di Caprio Foundation on new natural habitats.</u></p>
+        </a>
+        </div>
+    </div>
+
+
+
+
+<div class="carouselContainer">
+<div><img class= "cover1 blurr3"  src="icons/Rectangle 2.png"></div>
+<div><img class= "cover1 blurr2"  src="icons/Rectangle 2.png"></div>
+<div id="trendingMovies">Trending Movies</div>
+    <div id="carousel" class="your-class">
+        <div><a href="ProductPageAndroid.html">
+            <div><img class= "cover"  src="Covers/Darkest Hour.jpg"></div>
+            <p id="wolo123">The Darkest Hour</p>
+            <p id="wolo321">2017</p>
+            <p id="wolo111">86%</p>
+        </a>
+        </div>
+        <div><a href="ProductPageAndroid.html">
+            <div><img class= "cover"  src="Covers/Atomic Blonde.jpeg"></div>
+            <p id="wolo123">Atomic Blonde</p>
+            <p id="wolo321">2017</p>
+            <p id="wolo111">86%</p>
+        </a>
+        </div>
+        <div><a href="ProductPageAndroid.html">
+            <div><img class= "cover"  src="Covers/Blade Runner 2049 Cover.jpg"></div>
+            <p id="wolo123">Blade Runner 2049</p>
+            <p id="wolo321">2018</p>
+            <p id="wolo111">86%</p>
+        </a>
+        </div>
+        <div><a href="ProductPageAndroid.html">
+            <div><img class= "cover"  src="Covers/Dunkirk.jpg"></div>
+            <p id="wolo123">Dunkirk</p>
+            <p id="wolo321">2018</p>
+            <p id="wolo111">86%</p>
+        </a>
+        </div>
+        <div><a href="ProductPageAndroid.html">
+            <div><img class= "cover"  src="Covers/Pulp Fiction Cover.jpg"></div>
+            <p id="wolo123">Pulp Fiction</p>
+            <p id="wolo321">2020</p>
+            <p id="wolo111">86%</p>
+        </a>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="trendingShows">Trending Shows</div>
+    <div id="carousel1" class="your-class1">
+        <div><a href="ProductPageAndroid.html">
+            <div><img class= "cover"  src="Covers/Darkest Hour.jpg"></div>
+            <p id="wolo123">The Darkest Hour</p>
+            <p id="wolo321">2017</p>
+            <p id="wolo111">86%</p>
+        </a>
+        </div>
+        <div><a href="ProductPageAndroid.html">
+            <div><img class= "cover"  src="Covers/Atomic Blonde.jpeg"></div>
+            <p id="wolo123">Atomic Blonde</p>
+            <p id="wolo321">2017</p>
+            <p id="wolo111">86%</p>
+        </a>
+        </div>
+        <div><a href="ProductPageAndroid.html">
+            <div><img class= "cover"  src="Covers/Blade Runner 2049 Cover.jpg"></div>
+            <p id="wolo123">Blade Runner 2049</p>
+            <p id="wolo321">2018</p>
+            <p id="wolo111">86%</p>
+        </a>
+        </div>
+        <div><a href="ProductPageAndroid.html">
+            <div><img class= "cover"  src="Covers/Dunkirk.jpg"></div>
+            <p id="wolo123">Dunkirk</p>
+            <p id="wolo321">2018</p>
+            <p id="wolo111">86%</p>
+        </a>
+        </div>
+        <div><a href="ProductPageAndroid.html">
+            <div><img class= "cover"  src="Covers/Pulp Fiction Cover.jpg"></div>
+            <p id="wolo123">Pulp Fiction</p>
+            <p id="wolo321">2020</p>
+            <p id="wolo111">86%</p>
+        </a>
+        </div>
+    </div>
+
+
+
+
+</div>
+
+<!--End Carousels-->
+<div style="margin-bottom: 13%;">       
+<div class="containercal">
+    <div class="row">
+        <div class="col-6"><h1 id="cal">Calendar</h1></div>
+        <div class="col-6" id="caldown"><button id="downarrow" class="calbutton"><img id="arrowImg" src="icons/arrow-Down-Android.png "></button></div>
+    </div>
+</div>
+<div id="containerevent" class="containerevent">
+    <div class="row">
+        <div id="caldate" class="font30 col-8 white margin-bottom"><a onclick="toast();"><p><u>July 14 2018</u></p></a></div>
+        <div class="col-4" id="calset"><button onclick="toast();" class="calbutton"><img src="icons/settings.png "></button></div>
+    </div>
+    <div class="row">
+        <div class= "col-3 icon-allign"><a href="ProductPageAndroid.html"><img  src="icons/live-tv-android.png" width="45px" height="41px" ></a></div>
+        <div class= "col-9 font24 text-allign" style = "text-align: left "><a href="ProductPageAndroid.html"><p><u>GoT Se 8 Ep 1</u></a><br><span class="font18 margin-bottom-3 white ">OnAir:</span> <span class="font18 margin-bottom-3 yellow"><a href="ProductPageAndroid.html" class="yellow">Now</a></span></p></div>
+    </div>
+    <div class="row">
+        <div class= "col-3 icon-allign"><a href="ProductPageAndroid.html"><img src="icons/live-tv-android.png" width="45px" height="41px" ></a></div>
+        <div class= "col-9 font24 text-allign" style = "text-align: left "><a href="ProductPageAndroid.html"><p><u>Arrow: Se 6 Ep 16</u></a><br><span class="font18 margin-bottom-3 white ">OnAir:</span> <span class="font18 margin-bottom-3 yellow">18:00</span></p></div>
+    </div>
+    <div class="row">
+        <div class= "col-3 icon-allign"><a href="ProductPageAndroid.html"><img  src="icons/tv-android.png" width="45px" height="41px" ></a></div>
+        <div class= "col-9 font24 text-allign" style = "text-align: left "><a href="ProductPageAndroid.html"><p><u>Altered Carbon</u></a><br><span  class="font18 margin-bottom-3 yellow">(New Episode)</span></p></div>
+    </div>
+    <div class="row">
+        <div class= "col-3"><a href="ProductPageAndroid.html"><img  src="icons/film-android.png"  height="60px" ></a></div>
+        <div class= "col-9 font24 text-allign" style = "text-align: left "><a href="ProductPageAndroid.html"><p><u>Red Sparrow</u></a><br><span  class="font18 margin-bottom-3 yellow">(New Movie)</span></p></div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+<div id="snackbar">Function Unavailable</div>
+
+
+<footer>
+  <div id="Back"><a onclick="toast()"><img src="icons/arrow-left.png "></a></div>
+  <div id="Home"><a href="HomePageAndroid.html"><img src="icons/home.png "></a></div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slickHomeAndroid/slick.min.js"></script>
+
+
+
+<script>
+closeSidebar();
+function openSidebar() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("blurr").style.display="block";
+    document.getElementById("drb").style.color="#F2C94C";
+}
+function closeSidebar() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("blurr").style.display="none";
+    document.getElementById("drb").style.color="#f2f2f2";
+    
+}
+</script>
+
+
+
+
+
+
+
+    <script>
+    
+    $(document).ready(function(){
+        var flag = 0;
+        $("button#downarrow").click(function(){
+                
+
+
+
+                
+                if (flag==0) {
+                    document.getElementById("containerevent").style.display = "none";
+                    document.getElementById("arrowImg").src="icons/arrow-Right-Android.png";
+                    console.log(this.src);
+                    flag=1;
+                }else{
+                    document.getElementById("containerevent").style.display = "block";
+                    document.getElementById("arrowImg").src="icons/arrow-Down-Android.png";
+                    flag=0;
+                }
+                
+                
+
+
+        
+        });
+
+
+    });
+
+
+
+
+
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+            function toast() {
+                var x = document.getElementById("snackbar");
+                x.className = "show";
+                setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+            }
+        </script>
+
+
+
+
+<script  type="text/javascript">
+    $(document).ready(function(){ 
+    $('.your-class').slick({
+        arrows:false,
+        dots:true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '30px',
+            slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+            arrows: false,
+            dots:true,
+
+            slidesToShow: 2,
+        slidesToScroll: 3           }
+        }
+        ]
+    });
+});
+
+
+  </script>
+
+<script  type="text/javascript">
+    $(document).ready(function(){ 
+    $('.your-class1').slick({
+        arrows:false,
+        dots:true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '30px',
+            slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+            arrows: false,
+            dots:true,
+            slidesToShow: 2,
+        slidesToScroll: 3      }
+        }
+        ]
+    });
+});
+
+
+  </script>
+
+<script  type="text/javascript">
+    $(document).ready(function(){ 
+    $('.your-class2').slick({
+        arrows:false,
+        centerMode:false,
+        dots:false,
+        autoplay:true,
+        autoplaySpeed:0,
+        speed:7000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '30px',
+            slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '30px',
+                       }
+        },
+        {
+            breakpoint: 360,
+            settings: {
+                arrows:false,
+        centerMode:false,
+        dots:false,
+        autoplay:true,
+        autoplaySpeed:0,
+        speed:7000,
+        slidesToShow: 1,
+        slidesToScroll: 1,                       }
+        }
+        ]
+    });
+});
+
+
+  </script>
+
+
+
+</div>
+
+</body>

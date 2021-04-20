@@ -1,0 +1,683 @@
+<html>
+<title>Lumiere | Search</title>
+
+
+<meta charset="UTF-8">
+<meta name="description" content="A social media streaming site">
+<meta name="keywords" content="Lumiere, Movies, Shows, Series, Streams, Social">
+<meta name="author" content="Andreas Pattakos, Stratos Sikelis, Spyros Tzanakis">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" type="text/css" href="css/search-resultsStyle.css">
+<link rel="stylesheet" type="text/css" href="slickSearch/slick.css"/>
+<link rel="stylesheet" type="text/css" href="slickSearch/slick-theme.css"/>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" type="text/css" href="css/generalLayoutStyle.1.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+
+
+</head>
+
+  <body>
+      <div class="container-fluid">        
+          <div class="d-flex flex-row flex-row my-flex-container">
+              <span class="p-2  mr-auto my-flex-item"><span><a href="homeResponsive.html"><img id="logo" src="icons/Logo_figma.png"></a></span></span>
+              <!--<span class="p-2 my-flex-item"><input type="text"  placeholder=" &#xf002; Search..." style="margin-top: 15%; font-family:FontAwesome"></span>-->
+
+              <span class="p-2 mt-auto my-flex-item">
+                <div class="d-flex flex-row flex-row my-flex-container">
+                    <span id="searchenter" class="p-2 my-flex-item"><a href="search-results.html"><img src="icons/ic_search_black_48px.png" id="magnGlass"></a></span>
+                    <span><input type="text"  id="search" value=" Darkest Hour" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" style="color:  black;"></span>
+                    
+                    <span class="p-2 my-flex-item"><a href="dummyPage.html"><img src="icons/notifications.png" id="notifications"></a></span>
+                    <span class="p-2 my-flex-item"><a href="dummyPage.html"><img src="icons/UserIcon.png" id="userIcon"></a></span>
+                    </div>
+                </span>
+              <script>
+                var input = document.getElementById("search");
+                input.addEventListener("keyup", function(event) {
+                    event.preventDefault();
+                    if (event.keyCode === 13) {
+                        window.open("search-results.html","_self");
+                        console.log("open");
+                    }
+                });
+            </script>  
+      </div>
+  
+</div>
+
+
+<nav>
+
+    <button><a href="homeResponsive.html">HOME</a></button>
+    <button><a href="categories-page.html">MOVIES</a></button>
+    <button><a href="categories-page-shows.html">SHOWS</a></button>
+    <button><a href="categories-page-streams.html">STREAMS</a></button>
+    <button><a href="dummyPage.html">NEWS & EVENTS</a></button>
+</nav>
+<div id="wolo">
+  <div class="down">
+    <div class="navbar">
+        <div class="width1">
+        <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">GENRE:</button>
+                <button onclick="myFunction()" class="dropbtn" id="change1">All </button>
+                 <img class="arrow" onclick="myFunction()" src="icons/ic_arrow_drop_down_white_24px.png">
+              <div id="myDropdown" class="dropdown-content">
+                    <button onclick="myf(this.id, 'change1')" id="home">All</button>
+                    <button onclick="myf(this.id, 'change1')" id="about">Sci-fi</button>
+                    <button onclick="myf(this.id, 'change1')" id="contact">Drama</button>
+                    <button onclick="myf(this.id, 'change1')" id="war">War</button>
+              </div>
+            </div>
+        </div>
+        <div class="width1">
+        <div class="dropdown">
+            <button onclick="myFunction2()" class="dropbtn">BY:</button>
+            <button  onclick="myFunction2()" class="dropbtn" id="change2">Release</button> 
+            <img class="arrow" onclick="myFunction2()" src="icons/ic_arrow_drop_down_white_24px.png">
+                <div id="myDropdown2" class="dropdown-content">
+                    <button onclick="myf(this.id, 'change2')" id="home2">Release</button>
+                    <button onclick="myf(this.id, 'change2')" id="about2">Rating</button>
+                    <button onclick="myf(this.id, 'change2')" id="contact2">Views</button>
+                    <button onclick="myf(this.id, 'change2')" id="contact3">Title</button>
+                </div>
+            </div>
+        </div>
+        <div class="width1">
+        <div class="dropdown">
+                <button onclick="myFunction3()" id="lang" class="dropbtn">LANGUAGE:</button>
+                <button onclick="myFunction3()" class="dropbtn" id="change3">English</button>
+                <img id="belaki3" class="arrow" onclick="myFunction3()" src="icons/ic_arrow_drop_down_white_24px.png">
+                    <div id="myDropdown3" class="dropdown-content">
+                    <button onclick="myf(this.id, 'change3')" id="english">English</button>
+                    <button onclick="myf(this.id, 'change3')" id="hindu">Hindu</button>
+                    <button onclick="myf(this.id, 'change3')" id="mandarin">Mandarin</button>
+                    <button onclick="myf(this.id, 'change3')" id="greek">Greek</button>
+                </div>
+            </div>
+        </div>
+        <div class="width1"> 
+        <div class="dropdown">
+                <button  onclick="myFunction4()" class="dropbtn">YEAR:</button>
+                <button  onclick="myFunction4()" class="dropbtn" id="change4">2018</button><img class="arrow" onclick="myFunction4()" src="icons/ic_arrow_drop_down_white_24px.png">
+                <div id="myDropdown4" class="dropdown-content">
+                    <button onclick="myf(this.id, 'change4')" id="2017">2018</button>
+                    <button onclick="myf(this.id, 'change4')" id="2016">2017</button>
+                    <button onclick="myf(this.id, 'change4')" id="2015">2016</button>
+                    <button onclick="myf(this.id, 'change4')" id="alltime">2015</button>
+              </div>
+            </div>
+        </div>
+                
+    </div>
+  </div>
+</div>
+<!--<img id="show" src="Rectangle.png" style="visibility:hidden">-->
+<div><img class= "cover1 blurr3"  src="icons/Rectangle 2.png"></div>
+<div><img class= "cover1 blurr2"  src="icons/Rectangle 2.png"></div>
+<div><img class= "cover1 blurr1"  src="icons/Rectangle 2.png"></div>
+
+        <div class="center_carousels">
+            <span><p class="results">Results for: </p><p class="search">"Darkest Hour"</p></span>
+            <div id="carouselContainer">
+            <div class="size_matters" ><a href="categories-page.html"  >MOVIES (40)</a></div>
+              <div id="carousel" class="your-class" >
+                  <div><a href="productRespo.html">
+                        <div><img class= "cover"  src="Covers/Darkest Hour.jpg"></div>
+                        <p id="wolo123"> The Darkest Hour </p>
+                        <p id="wolo321">2017</p>
+                        <p id="wolo111">86%</p>
+                    </a>
+                  </div>
+                  <div><a href="productRespo.html">
+                      <div><img class= "cover"  src="Covers/Atomic Blonde.jpeg"></div>
+                      <p id="wolo123"> Atomic Blonde </p>
+                      <p id="wolo321">2017</p>
+                      <p id="wolo111">86%</p>
+                    </a>
+                  </div>
+                  <div><a href="productRespo.html">
+                      <div><img class= "cover"  src="Covers/Blade Runner 2049 Cover.jpg"></div>
+                      <p id="wolo123"> Blade Runner 2049 </p>
+                      <p id="wolo321">2018</p>
+                      <p id="wolo111">86%</p>
+                    </a>
+                  </div>
+                  <div><a href="productRespo.html">
+                      <div><img class= "cover"  src="Covers/Dunkirk.jpg"></div>
+                      <p id="wolo123"> Dunkirk </p>
+                      <p id="wolo321">2018</p>
+                      <p id="wolo111">86%</p>
+                    </a>
+                  </div>
+                  <div><a href="productRespo.html">
+                      <div><img class= "cover"  src="Covers/Pulp Fiction Cover.jpg"></div>
+                      <p id="wolo123"> Pulp Fiction </p>
+                      <p id="wolo321">2020</p>
+                      <p id="wolo111">86%</p>
+                    </a>
+                  </div>
+                  <div><a href="productRespo.html">
+                      <div><img class= "cover"  src="Covers/I,Tonya.jpg"></div>
+                      <p id="wolo123"> I,Tonya </p>
+                      <p id="wolo321">2018</p>
+                      <p id="wolo111">86%</p>
+                    </a>
+                  </div>
+                  <div><a href="productRespo.html">
+                      <div><img class= "cover"  src="Covers/SpiderMan Cover.jpg"></div>
+                      <p id="wolo123"> Spiderman Homecoming </p>
+                      <p id="wolo321">2018</p>
+                      <p id="wolo111">86%</p>
+                    </a>
+                  </div>
+                  <div><a href="productRespo.html">
+                      <div><img class= "cover"  src="Covers/Resident Evil Cover.jpg"></div>
+                      <p id="wolo123"> Resident Evil </p>
+                      <p id="wolo321">2017</p>
+                      <p id="wolo111">86%</p>
+                    </a>
+                  </div>
+                  <div><a href="productRespo.html">
+                      <div><img class= "cover"  src="Covers/Lady Bird.jpg"></div>
+                      <p id="wolo123"> Lady Bird </p>
+                      <p id="wolo321">2018</p>
+                      <p id="wolo111">86%</p>
+                    </a>
+                  </div>
+                  <div><a href="productRespo.html">
+                      <div><img class= "cover"  src="Covers/Jurassic Park Cover.jpg"></div>
+                      <p id="wolo123"> Jurassic Park </p>
+                      <p id="wolo321">2018</p>
+                      <p id="wolo111">86%</p>
+                    </a>
+                  </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+            <div id="carouselContainer1">
+              <div id="top_space" class="size_matters"><a  href="categories-page-shows.html">SHOWS (40)</a></div>
+              <div id="carousel1" class="your-class1">
+                  <div><a href="productShows.html">
+                      <div><img class= "cover"  src="Covers/Stranger Things 2.jpg"></div>
+                      <p id="wolo123"> Stranger Things </p>
+                      <p id="wolo321">2016</p>
+                      <p id="wolo111">86%</p>
+                  </a>
+                </div>
+                <div><a href="productShows.html">
+                    <div><img class= "cover"  src="Covers/West World.jpg"></div>
+                    <p id="wolo123"> WestWorld </p>
+                    <p id="wolo321">2016</p>
+                    <p id="wolo111">86%</p>
+                  </a>
+                </div>
+                <div><a href="productShows.html">
+                    <div><img class= "cover"  src="Covers/got.jpg"></div>
+                    <p id="wolo123"> Game of Thrones </p>
+                    <p id="wolo321">2011</p>
+                    <p id="wolo111">86%</p>
+                  </a>
+                </div>
+                <div><a href="productShows.html">
+                    <div><img class= "cover"  src="Covers/Sherlocked.jpg"></div>
+                    <p id="wolo123"> Sherlock </p>
+                    <p id="wolo321">2010</p>
+                    <p id="wolo111">86%</p>
+                  </a>
+                </div>
+                <div><a href="productShows.html">
+                    <div><img class= "cover"  src="Covers/Vikings.jpg"></div>
+                    <p id="wolo123"> Vikings </p>
+                    <p id="wolo321">2013</p>
+                    <p id="wolo111">86%</p>
+                  </a>
+                </div>
+                <div><a href="productShows.html">
+                    <div><img class= "cover"  src="Covers/Stranger Things 2.jpg"></div>
+                    <p id="wolo123"> Stranger Thingsa </p>
+                    <p id="wolo321">2016</p>
+                    <p id="wolo111">86%</p>
+                  </a>
+                </div>
+                <div><a href="productShows.html">
+                    <div><img class= "cover"  src="Covers/Dark Cover.jpg"></div>
+                    <p id="wolo123"> The Dark </p>
+                    <p id="wolo321">2018</p>
+                    <p id="wolo111">86%</p>
+                  </a>
+                </div>
+                <div><a href="productShows.html">
+                    <div><img class= "cover"  src="Covers/True blood.jpg"></div>
+                    <p id="wolo123"> True blood </p>
+                    <p id="wolo321">2008</p>
+                    <p id="wolo111">86%</p>
+                  </a>
+                </div>
+                <div><a href="productShows.html">
+                    <div><img class= "cover"  src="Covers/The Walking Dead.jpg"></div>
+                    <p id="wolo123"> The Walking Dead </p>
+                    <p id="wolo321">2010</p>
+                    <p id="wolo111">86%</p>
+                  </a>
+                </div>
+                <div><a href="productShows.html">
+                    <div><img class= "cover"  src="Covers/got.jpg"></div>
+                    <p id="wolo123"> Game of Thrones </p>
+                    <p id="wolo321">2011</p>
+                    <p id="wolo111">86%</p>
+                  </a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <div id="carouselContainer2">
+            <div id="top_space" class="size_matters"><a  href="categories-page-streams.html">STREAMS (40)</a></div>
+              <div id="carousel2" class="your-class2" >
+                  <div><a href="productStream.html">
+                      <div><img class= "cover"  src="Covers/Atomic Blonde.jpeg"></div>
+                      <p id="wolo123"> Atomic Blonde </p>
+                      <p id="wolo321">800 Viewers</p>
+                  </a>
+                </div>
+                <div><a href="productStream.html">
+                    <div><img class= "cover"  src="Covers/got.jpg"></div>
+                    <p id="wolo123"> GoT Se07Ep09 </p>
+                    <p id="wolo321">3000 Viewers</p>
+                  </a>
+                </div>
+                <div><a href="productStream.html">
+                    <div><img class= "cover"  src="Covers/hbo interview3.png"></div>
+                    <p id="wolo123"> Viny! Cast Interview </p>
+                    <p id="wolo321">400 Viewers</p>
+                  </a>
+                </div>
+                <div><a href="productStream.html">
+                    <div><img class= "cover"  src="Covers/Stranger Things 2.jpg"></div>
+                    <p id="wolo123"> Stranger Things Premier </p>
+                    <p id="wolo321">2000 Viewers</p>
+                  </a>
+                </div>
+                <div><a href="productStream.html">
+                    <div><img class= "cover"  src="Covers/Sherlocked.jpg"></div>
+                    <p id="wolo123"> Sherlock </p>
+                    <p id="wolo321">1000 Viewers</p>
+                  </a>
+                </div>
+                <div><a href="productStream.html">
+                    <div><img class= "cover"  src="Covers/Tomb Raider Cover.jpeg"></div>
+                    <p id="wolo123"> Tomb Raider </p>
+                    <p id="wolo321">800 Viewers</p>
+                  </a>
+                </div>
+                <div><a href="productStream.html">
+                    <div><img class= "cover"  src="Covers/SpiderMan Cover.jpg"></div>
+                    <p id="wolo123"> Spiderman Homecoming </p>
+                    <p id="wolo321">500 Viewers</p>
+                  </a>
+                </div>
+                <div><a href="productStream.html">
+                    <div><img class= "cover"  src="Covers/Resident Evil Cover.jpg"></div>
+                    <p id="wolo123"> Resident Evil </p>
+                    <p id="wolo321">200 Viewers</p>
+                  </a>
+                </div>
+                <div><a href="productStream.html">
+                    <div><img class= "cover"  src="Covers/Lady Bird.jpg"></div>
+                    <p id="wolo123"> Lady Bird </p>
+                    <p id="wolo321">300 Viewers</p>
+                  </a>
+                </div>
+                <div><a href="productStream.html">
+                    <div><img class= "cover"  src="Covers/Jurassic Park Cover.jpg"></div>
+                    <p id="wolo123"> Jurassic Park </p>
+                    <p id="wolo321">600 Viewers</p>
+                  </a>
+                </div>
+            </div>
+            </div>
+
+
+
+      </div>
+    </div>
+
+
+    <div>
+        <div class="center back-to-top"><button onclick="topFunction()" id="myBtn" title="Go to top"><img class="back-to-top" src="icons/Back-to-top.png" ></button></div>
+        <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+                document.getElementById("myBtn").style.visibility = "visible";
+            } else {
+                document.getElementById("myBtn").style.visibility = "hidden";
+            }
+        }
+        function topFunction() {
+            $(document.body).animate({scrollTop: 0}, 800);
+            return false;
+        }
+        </script>
+      <footer  class="center">
+           <div class="d-flex flex-row justify-content-between my-flex-container">
+                   
+                   <span class="p-2 my-flex-item">
+                       <span class="p-2 mr-auto my-flex-item" >
+                            <span ><a href="dummyPage.html"><img src="icons/applelogo.png" style="width:50px; margin-top: 2px; " ></a></span>
+                            <span ><a href="dummyPage.html"><img src="icons/playstore.png" style="width:50px; margin-top: 2px; margin-right: -15%; margin-left: 15%" ></a></span>
+                        </span>
+                   </span>
+                   
+                   <span class="p-2 my-flex-item" style = "margin-top: 15px; margin-left: 40px;" >
+                       <span class="p-2  my-flex-item"  >Lumiere Ltd. All Rights reserved</span>
+                   </span>
+
+                   <span class="p-2 my-flex-item">
+                       <span class="p-2 my-flex-item" style="padding: 5%">
+                           <span ><a href="dummyPage.html"><img src="icons/facebook.png" style="width:50px; margin-top: 2px; margin-left: -30%; margin-right: 10%" ></a></span>
+                           <span ><a href="dummyPage.html"><img src="icons/instagram.png" style="width:50px; margin-top: 2px; margin-right: 10%;" ></a></span>
+                           <span ><a href="dummyPage.html"><img src="icons/twitter.png" style="width:50px; margin-top: 2px;" ></a></span>
+                       </span>
+                   </span>
+
+           </div>
+
+
+       
+       </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slickSearch/slick.min.js"></script>
+				
+    <script  type="text/javascript">
+    $(document).ready(function(){ 
+    $('.your-class').slick({
+        dots:true,
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '30px',
+            slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '30px',
+            slidesToShow: 1
+            }
+        }
+        ]
+    });
+});
+
+
+
+  </script>
+<script  type="text/javascript">
+ $(document).ready(function(){ 
+  $('.your-class1').slick({
+        dots:true,
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '30px',
+            slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '30px',
+            slidesToShow: 1
+            }
+        }
+        ]
+    });
+});
+
+</script>
+
+<script  type="text/javascript">
+ $(document).ready(function(){ 
+  $('.your-class2').slick({
+        dots:true,
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '30px',
+            slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '30px',
+            slidesToShow: 1
+            }
+        }
+        ]
+    });
+});
+</script>
+
+ 
+ </script>
+
+
+
+<script>
+
+
+
+
+   function toggleFilters1(btnId){
+
+	
+     var btnText = document.getElementById(btnId).innerText;
+     var text = document.getElementById("GENRE").innerHTML = "GENRE: "+ btnText+" "+ "<img class='mini' src='icons/ic_arrow_drop_down_white_24px.png'>";
+
+
+
+  }
+
+
+ function toggleFilters2(btnId){
+
+	
+  var btnText = document.getElementById(btnId).innerText;
+  var text = document.getElementById("BY").innerHTML = "BY: "+ btnText+" "+ "<img class='mini' src='icons/ic_arrow_drop_down_white_24px.png'>";
+
+
+
+  }
+
+
+ function toggleFilters3(btnId){
+
+	
+  var btnText = document.getElementById(btnId).innerText;
+  var text = document.getElementById("LANGUAGE").innerHTML = "LANGUAGE: "+ btnText+" "+ "<img class='mini' src='icons/ic_arrow_drop_down_white_24px.png'>";
+
+
+
+  }
+
+
+  function toggleFilters4(btnId){
+
+	
+    var btnText = document.getElementById(btnId).innerText;
+    var text = document.getElementById("YEAR").innerHTML = "YEAR: "+ btnText+" "+ "<img class='mini' src='icons/ic_arrow_drop_down_white_24px.png'>";
+
+
+
+  }
+
+
+  
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+<script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    function myFunction2() {
+        document.getElementById("myDropdown2").classList.toggle("show");
+    }
+    
+    function myFunction3() {
+        document.getElementById("myDropdown3").classList.toggle("show");
+    }
+    function myFunction4() {
+        document.getElementById("myDropdown4").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn') && !event.target.matches('.arrow')) {
+    
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    
+    
+    function myf(btnId, here){
+    
+      
+        var btnText = document.getElementById(btnId).innerText;
+        var text = document.getElementById(here).innerHTML = btnText 
+        console.log(here);
+    
+    
+    }
+    
+    
+    
+    
+    
+    </script>
+
+
+    <script>
+        
+
+            var currentBlack="carouselContainer";
+
+            $(".your-class").on("click",function(){
+                console.log(currentBlack);
+                (document).getElementById(currentBlack).style.background="transparent";
+                (document).getElementById("carouselContainer").style.background = "#212121";
+                currentBlack=(document).getElementById("carouselContainer").id;
+            })
+
+            $(".your-class1").on("click",function(){
+                console.log(currentBlack);
+                (document).getElementById(currentBlack).style.background="transparent";
+                (document).getElementById("carouselContainer1").style.background = "#212121";
+                currentBlack=(document).getElementById("carouselContainer1").id;
+            })
+
+            $(".your-class2").on("click",function(){
+                console.log(currentBlack);
+                (document).getElementById(currentBlack).style.background="transparent";
+                (document).getElementById("carouselContainer2").style.background = "#212121";
+                currentBlack=(document).getElementById("carouselContainer2").id;
+            })
+            
+
+
+
+        
+        
+    
+    </script>
+
+
+
+    </body>
+    
+    
+    
+    
+    
+    </html>

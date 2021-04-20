@@ -1,0 +1,703 @@
+<html>
+<title>Lumiere | Streams</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A social media streaming site">
+    <meta name="keywords" content="Lumiere, Movies, Shows, Series, Streams, Social">
+    <meta name="author" content="Andreas Pattakos, Stratos Sikelis, Spyros Tzanakis">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="css/generalLayoutStyle.1.css">
+    <link rel="stylesheet" type="text/css" href="css/Categories-page-showsStyle.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="css/Categories-page-streamsStyle.css">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+    
+        <div class="d-flex flex-row flex-row my-flex-container">
+            <span class="p-2 mt-auto mr-auto my-flex-item">
+                <span>
+                    <a href="homeResponsive.html">
+                        <img id="logo" src="icons/Logo_figma.png">
+                    </a>
+                </span>
+            </span>
+           
+            <span class="p-2 mt-auto my-flex-item">
+                <div class="d-flex flex-row flex-row my-flex-container">
+                    <span id="searchenter" class="p-2 my-flex-item"><a href="search-results.html"><img src="icons/magnGlass.png" id="magnGlass"></a></span>
+                    <span><input class="color8e8e8e" type="text"  id="search" value=" Search..." onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;"></span>
+                    
+                    <span class="p-2 my-flex-item"><a href="dummyPage.html"><img src="icons/notifications.png" id="notifications"></a></span>
+                    <span class="p-2 my-flex-item"><a href="dummyPage.html"><img src="icons/UserIcon.png" id="userIcon"></a></span>
+                    </div>
+                </span>
+            <script>
+                var input = document.getElementById("search");
+                input.addEventListener("keyup", function (event) {
+                    event.preventDefault();
+                    if (event.keyCode === 13) {
+                        window.open("search-results.html", "_self");
+                        console.log("open");
+                    }
+                });
+            </script>
+        </div>
+    </div>
+    <nav>
+        <button>
+            <a href="homeResponsive.html">HOME</a>
+        </button>
+        <button >
+            <a href="categories-page.html">MOVIES</a>
+        </button>
+        <button>
+            <a href="categories-page-shows.html">SHOWS</a>
+        </button>
+        <button id="highlight">
+            <a href="categories-page-streams.html">STREAMS</a>
+        </button>
+        <button>
+            <a href="dummyPage.html">NEWS & EVENTS</a>
+        </button>
+    </nav>
+    <!-- from search-page -->
+    <div id="wolo">
+        <div class="down">
+            <div class="navbar">
+                <div class="width260px">
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">GENRE:</button>
+                        <button onclick="myFunction()" class="dropbtn" id="change1">All </button>
+                        <img class="arrow" onclick="myFunction()" src="icons/ic_arrow_drop_down_white_24px.png">
+                        <div id="myDropdown" class="dropdown-content">
+                            <button onclick="myf(this.id, 'change1')" id="home">All</button>
+                            <button onclick="myf(this.id, 'change1')" id="about">Sci-fi</button>
+                            <button onclick="myf(this.id, 'change1')" id="contact">Drama</button>
+                            <button onclick="myf(this.id, 'change1')" id="war">War</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="width260px">
+                    <div class="dropdown">
+                        <button onclick="myFunction2()" class="dropbtn">BY:</button>
+                        <button onclick="myFunction2()" class="dropbtn" id="change2">Release</button>
+                        <img class="arrow" onclick="myFunction2()" src="icons/ic_arrow_drop_down_white_24px.png">
+                        <div id="myDropdown2" class="dropdown-content">
+                            <button onclick="myf(this.id, 'change2')" id="home2">Release</button>
+                            <button onclick="myf(this.id, 'change2')" id="about2">Rating</button>
+                            <button onclick="myf(this.id, 'change2')" id="contact2">Views</button>
+                            <button onclick="myf(this.id, 'change2')" id="contact3">Title</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="width260px">
+                    <div class="dropdown">
+                        <button onclick="myFunction3()" id="lang" class="dropbtn">LANGUAGE:</button>
+                        <button onclick="myFunction3()" class="dropbtn" id="change3">English</button>
+                        <img id="belaki3" class="arrow" onclick="myFunction3()" src="icons/ic_arrow_drop_down_white_24px.png">
+                        <div id="myDropdown3" class="dropdown-content">
+                            <button onclick="myf(this.id, 'change3')" id="english">English</button>
+                            <button onclick="myf(this.id, 'change3')" id="hindu">Hindu</button>
+                            <button onclick="myf(this.id, 'change3')" id="mandarin">Mandarin</button>
+                            <button onclick="myf(this.id, 'change3')" id="greek">Greek</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="width260px">
+                    <div class="dropdown">
+                        <button onclick="myFunction4()" class="dropbtn">YEAR:</button>
+                        <button onclick="myFunction4()" class="dropbtn" id="change4">2018</button>
+                        <img class="arrow" onclick="myFunction4()" src="icons/ic_arrow_drop_down_white_24px.png">
+                        <div id="myDropdown4" class="dropdown-content">
+                            <button onclick="myf(this.id, 'change4')" id="2017">2018</button>
+                            <button onclick="myf(this.id, 'change4')" id="2016">2017</button>
+                            <button onclick="myf(this.id, 'change4')" id="2015">2016</button>
+                            <button onclick="myf(this.id, 'change4')" id="alltime">2015</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end -->
+
+
+    <div class="row rowDiv" >
+        <div>
+            <p class="collection">COLLECTION
+                <span>(28)</span>
+            </p>
+        </div>
+        <div class="center tile">
+            <div class="container">
+                <div>
+                    <a href="productStream.html">
+                        <img class="cover " src="Covers/got.jpg">
+                    </a>
+                </div>
+                <div class="title-text">
+                    <a href="productStream.html">
+                         GoT Se07Ep09 
+                    </a>
+                </div>
+                <div class="row">
+                    <span class=" col-10 viewers-text">
+                        <a href="productStream.html">3000 Viewers</a>
+                    </span>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <a href="productStream.html">
+                        <img class="cover " src="Covers/hbo interview3.png">
+                    </a>
+                </div>
+                <div class="title-text">
+                    <a href="productStream.html">
+                         Viny! Cast Interview 
+                    </a>
+                </div>
+                <div class="row">
+                    <span class=" col-10 viewers-text">
+                        <a href="productStream.html">400 Viewers</a>
+                    </span>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <a href="productStream.html">
+                        <img class="cover " src="Covers/West World.jpg">
+                    </a>
+                </div>
+                <div class="title-text">
+                    <a href="productStream.html">
+                         West World 
+                    </a>
+                </div>
+                <div class="row">
+                    <span class=" col-10 viewers-text">
+                        <a href="productStream.html">1500 Viewers</a>
+                    </span>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <a href="productStream.html">
+                        <img class="cover " src="Covers/Stranger Things 2.jpg">
+                    </a>
+                </div>
+                <div class="title-text">
+                    <a href="productStream.html">
+                         Stranger Things Premier 
+                    </a>
+                </div>
+                <div class="row">
+                    <span class=" col-10 viewers-text">
+                        <a href="productStream.html">2000 Viewers</a>
+                    </span>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <a href="productStream.html">
+                        <img class="cover " src="Covers/Sherlocked.jpg">
+                    </a>
+                </div>
+                <div class="title-text">
+                    <a href="productStream.html">
+                         Sherlock 
+                    </a>
+                </div>
+                <div class="row">
+                    <span class=" col-10 viewers-text">
+                        <a href="productStream.html">1000 Viewers</a>
+                    </span>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <a href="productStream.html">
+                        <img class="cover " src="Covers/Tomb Raider Cover.jpeg">
+                    </a>
+                </div>
+                <div class="title-text">
+                    <a href="productStream.html">
+                         Tomb Raider 
+                    </a>
+                </div>
+                <div class="row">
+                    <span class=" col-10 viewers-text">
+                        <a href="productStream.html">800 Viewers</a>
+                    </span>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <a href="productStream.html">
+                        <img class="cover " src="Covers/Atomic Blonde.jpeg">
+                    </a>
+                </div>
+                <div class="title-text">
+                    <a href="productStream.html">
+                         Atomic Blonde 
+                    </a>
+                </div>
+                <div class="row">
+                    <span class=" col-10 viewers-text">
+                        <a href="productStream.html">800 Viewers</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="center tile">
+            <div class="container">
+                <div>
+                    <a href="productStream.html">
+                        <img class="cover " src="Covers/Atomic Blonde.jpeg">
+                    </a>
+                </div>
+                <div class="title-text">
+                    <a href="productStream.html">
+                         Atomic Blonde 
+                    </a>
+                </div>
+                <div class="row">
+                    <span class=" col-10 viewers-text">
+                        <a href="productStream.html">800 Viewers</a>
+                    </span>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <a href="productStream.html">
+                        <img class="cover " src="Covers/Tomb Raider Cover.jpeg">
+                    </a>
+                </div>
+                <div class="title-text">
+                    <a href="productStream.html">
+                         Tomb Raider 
+                    </a>
+                </div>
+                <div class="row">
+                    <span class=" col-10 viewers-text">
+                        <a href="productStream.html">800 Viewers</a>
+                    </span>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <a href="productStream.html">
+                        <img class="cover " src="Covers/Sherlocked.jpg">
+                    </a>
+                </div>
+                <div class="title-text">
+                    <a href="productStream.html">
+                         Sherlock 
+                    </a>
+                </div>
+                <div class="row">
+                    <span class=" col-10 viewers-text">
+                        <a href="productStream.html">1000 Viewers</a>
+                    </span>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <a href="productStream.html">
+                        <img class="cover " src="Covers/Stranger Things 2.jpg">
+                    </a>
+                </div>
+                <div class="title-text">
+                    <a href="productStream.html">
+                         Stranger Things Premier 
+                    </a>
+                </div>
+                <div class="row">
+                    <span class=" col-10 viewers-text">
+                        <a href="productStream.html">2000 Viewers</a>
+                    </span>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <a href="productStream.html">
+                        <img class="cover " src="Covers/West World.jpg">
+                    </a>
+                </div>
+                <div class="title-text">
+                    <a href="productStream.html">
+                         West World 
+                    </a>
+                </div>
+                <div class="row">
+                    <span class=" col-10 viewers-text">
+                        <a href="productStream.html">1500 Viewers</a>
+                    </span>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <a href="productStream.html">
+                        <img class="cover " src="Covers/hbo interview3.png">
+                    </a>
+                </div>
+                <div class="title-text">
+                    <a href="productStream.html">
+                         Viny! Cast Interview 
+                    </a>
+                </div>
+                <div class="row">
+                    <span class=" col-10 viewers-text">
+                        <a href="productStream.html">400 Viewers</a>
+                    </span>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <a href="productStream.html">
+                        <img class="cover " src="Covers/got.jpg">
+                    </a>
+                </div>
+                <div class="title-text">
+                    <a href="productStream.html">
+                         GoT Se07Ep09 
+                    </a>
+                </div>
+                <div class="row">
+                    <span class=" col-10 viewers-text">
+                        <a href="productStream.html">3000 Viewers</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="center tile">
+            <div class="container">
+                <div>
+                    <a href="productStream.html">
+                        <img class="cover " src="Covers/got.jpg">
+                    </a>
+                </div>
+                <div class="title-text">
+                    <a href="productStream.html">
+                         GoT Se07Ep09 
+                    </a>
+                </div>
+                <div class="row">
+                    <span class=" col-10 viewers-text">
+                        <a href="productStream.html">3000 Viewers</a>
+                    </span>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <a href="productStream.html">
+                        <img class="cover " src="Covers/hbo interview3.png">
+                    </a>
+                </div>
+                <div class="title-text">
+                    <a href="productStream.html">
+                         Viny! Cast Interview 
+                    </a>
+                </div>
+                <div class="row">
+                    <span class=" col-10 viewers-text">
+                        <a href="productStream.html">400 Viewers</a>
+                    </span>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <a href="productStream.html">
+                        <img class="cover " src="Covers/West World.jpg">
+                    </a>
+                </div>
+                <div class="title-text">
+                    <a href="productStream.html">
+                         West World 
+                    </a>
+                </div>
+                <div class="row">
+                    <span class=" col-10 viewers-text">
+                        <a href="productStream.html">1500 Viewers</a>
+                    </span>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <a href="productStream.html">
+                        <img class="cover " src="Covers/Stranger Things 2.jpg">
+                    </a>
+                </div>
+                <div class="title-text">
+                    <a href="productStream.html">
+                         Stranger Things Premier 
+                    </a>
+                </div>
+                <div class="row">
+                    <span class=" col-10 viewers-text">
+                        <a href="productStream.html">2000 Viewers</a>
+                    </span>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <a href="productStream.html">
+                        <img class="cover " src="Covers/Sherlocked.jpg">
+                    </a>
+                </div>
+                <div class="title-text">
+                    <a href="productStream.html">
+                         Sherlock 
+                    </a>
+                </div>
+                <div class="row">
+                    <span class=" col-10 viewers-text">
+                        <a href="productStream.html">1000 Viewers</a>
+                    </span>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <a href="productStream.html">
+                        <img class="cover " src="Covers/Tomb Raider Cover.jpeg">
+                    </a>
+                </div>
+                <div class="title-text">
+                    <a href="productStream.html">
+                         Tomb Raider 
+                    </a>
+                </div>
+                <div class="row">
+                    <span class=" col-10 viewers-text">
+                        <a href="productStream.html">800 Viewers</a>
+                    </span>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <a href="productStream.html">
+                        <img class="cover " src="Covers/Atomic Blonde.jpeg">
+                    </a>
+                </div>
+                <div class="title-text">
+                    <a href="productStream.html">
+                         Atomic Blonde 
+                    </a>
+                </div>
+                <div class="row">
+                    <span class=" col-10 viewers-text">
+                        <a href="productStream.html">800 Viewers</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div id="lastrow" class="center tile">
+            <div class="container">
+                <div>
+                    <a href="productStream.html">
+                        <img class="cover " src="Covers/Atomic Blonde.jpeg">
+                    </a>
+                </div>
+                <div class="title-text">
+                    <a href="productStream.html">
+                         Atomic Blonde 
+                    </a>
+                </div>
+                <div class="row">
+                    <span class=" col-10 viewers-text">
+                        <a href="productStream.html">800 Viewers</a>
+                    </span>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <a href="productStream.html">
+                        <img class="cover " src="Covers/Tomb Raider Cover.jpeg">
+                    </a>
+                </div>
+                <div class="title-text">
+                    <a href="productStream.html">
+                         Tomb Raider 
+                    </a>
+                </div>
+                <div class="row">
+                    <span class=" col-10 viewers-text">
+                        <a href="productStream.html">800 Viewers</a>
+                    </span>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <a href="productStream.html">
+                        <img class="cover " src="Covers/Sherlocked.jpg">
+                    </a>
+                </div>
+                <div class="title-text">
+                    <a href="productStream.html">
+                         Sherlock 
+                    </a>
+                </div>
+                <div class="row">
+                    <span class=" col-10 viewers-text">
+                        <a href="productStream.html">1000 Viewers</a>
+                    </span>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <a href="productStream.html">
+                        <img class="cover " src="Covers/Stranger Things 2.jpg">
+                    </a>
+                </div>
+                <div class="title-text">
+                    <a href="productStream.html">
+                         Stranger Things Premier 
+                    </a>
+                </div>
+                <div class="row">
+                    <span class=" col-10 viewers-text">
+                        <a href="productStream.html">2000 Viewers</a>
+                    </span>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <a href="productStream.html">
+                        <img class="cover " src="Covers/West World.jpg">
+                    </a>
+                </div>
+                <div class="title-text">
+                    <a href="productStream.html">
+                         West World 
+                    </a>
+                </div>
+                <div class="row">
+                    <span class=" col-10 viewers-text">
+                        <a href="productStream.html">1500 Viewers</a>
+                    </span>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <a href="productStream.html">
+                        <img class="cover " src="Covers/hbo interview3.png">
+                    </a>
+                </div>
+                <div class="title-text">
+                    <a href="productStream.html">
+                         Viny! Cast Interview 
+                    </a>
+                </div>
+                <div class="row">
+                    <span class=" col-10 viewers-text">
+                        <a href="productStream.html">400 Viewers</a>
+                    </span>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <a href="productStream.html">
+                        <img class="cover " src="Covers/got.jpg">
+                    </a>
+                </div>
+                <div class="title-text">
+                    <a href="productStream.html">
+                         GoT Se07Ep09 
+                    </a>
+                </div>
+                <div class="row">
+                    <span class=" col-10 viewers-text">
+                        <a href="productStream.html">3000 Viewers</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="center back-to-top">
+            <button onclick="topFunction()" id="myBtn" title="Go to top">
+                <img class="back-to-top" src="icons/Back-to-top.png">
+            </button>
+        </div>
+        <script>
+            window.onscroll = function () { scrollFunction() };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+                    document.getElementById("myBtn").style.visibility = "visible";
+                } else {
+                    document.getElementById("myBtn").style.visibility = "hidden";
+                }
+            }
+            function topFunction() {
+                $(document.body).animate({ scrollTop: 0 }, 800);
+                return false;
+            }
+        </script>
+        <footer class="center">
+            <div class="d-flex flex-row justify-content-between my-flex-container">
+                <span class="p-2 my-flex-item">
+                    <span class="p-2 mr-auto my-flex-item">
+                        <span>
+                            <a href="dummyPage.html">
+                                <img src="icons/applelogo.png" style="width:50px; margin-top: 2px; ">
+                            </a>
+                        </span>
+                        <span>
+                            <a href="dummyPage.html">
+                                <img src="icons/playstore.png" style="width:50px; margin-top: 2px; margin-right: -15%; margin-left: 15%">
+                            </a>
+                        </span>
+                    </span>
+                </span>
+                <span class="p-2 my-flex-item" style="margin-top: 15px; margin-left: 40px;">
+                    <span class="p-2  my-flex-item">Lumiere Ltd. All Rights reserved</span>
+                </span>
+                <span class="p-2 my-flex-item">
+                    <span class="p-2 my-flex-item" style="padding: 5%">
+                        <span>
+                            <a href="dummyPage.html">
+                                <img src="icons/facebook.png" style="width:50px; margin-top: 2px; margin-left: -30%; margin-right: 10%">
+                            </a>
+                        </span>
+                        <span>
+                            <a href="dummyPage.html">
+                                <img src="icons/instagram.png" style="width:50px; margin-top: 2px; margin-right: 10%;">
+                            </a>
+                        </span>
+                        <span>
+                            <a href="dummyPage.html">
+                                <img src="icons/twitter.png" style="width:50px; margin-top: 2px;">
+                            </a>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </footer>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="categories-page-streamsFunc.js"></script>
+
+
+</body>
+</html>

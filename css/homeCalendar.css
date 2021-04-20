@@ -1,0 +1,89 @@
+
+
+
+
+.calendar{
+	left: 1591px;
+    top: 255px;
+	width: 264px;
+    height: 212px;
+    margin-top: 3%;
+
+}
+
+.month {
+    padding: 3px;
+    text-align: center;
+    background: #212121;
+    text-align: center;
+    font-size: 16px;
+    width: 264px;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .prev {
+    float: left;
+    
+    
+}
+
+.month .next {
+    float: right;
+    
+}
+
+.weekdays {
+	width: 264px;
+    
+    margin: 0;
+    text-align: left;
+    background-color: #212121;
+}
+
+.weekdays li {
+    display: inline;
+    text-align: left;
+    padding: 8px;
+    color: white;
+    ;
+}
+#sunday {
+    margin-left: -20%;
+}
+
+.days {
+	width: 264px;
+    height: 151px;
+    padding: 5px 0;
+    background: #2A343D;
+}
+
+.days li {
+    list-style-type: decimal;
+    display: inline-block;
+    border-color: #212121;
+    text-align: center;
+    padding: 5px 12px;
+    
+    font-size:12px;
+    color: white;
+    border: 1px solid #212121;
+    border-spacing: 10px 10px;
+}
+
+
+#active {
+    border: 1px solid #F2C94C;
+    color: #F2C94C ;
+}

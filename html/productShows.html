@@ -1,0 +1,954 @@
+
+<!doctype html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="css/generalLayoutStyle.1.css">
+    <link rel="stylesheet" type="text/css" href="css/productShowsStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/video_Player.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="slickProductGallery/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slickProductGallery/slick-theme.css"/>
+
+    <link rel="stylesheet" type="text/css" href="css/modalImage.css"/>
+    
+    
+    <title>Lumiere | Shows</title>
+  </head>
+
+
+
+
+  <body>
+    
+    <div class="container-fluid">
+
+       
+       
+
+
+
+            <div class="d-flex flex-row flex-row my-flex-container">
+                    <span class="p-2  mr-auto my-flex-item"><span><a href="homeResponsive.html"><img id="logo" src="icons/Logo_figma.png"></a></span></span>
+                    <!--<span class="p-2 my-flex-item"><input type="text"  placeholder=" &#xf002; Search..." style="margin-top: 15%; font-family:FontAwesome"></span>-->
+    
+                    <span class="p-2 mt-auto my-flex-item">
+                        <div class="d-flex flex-row flex-row my-flex-container">
+                            <span id="searchenter" class="p-2 my-flex-item"><a href="search-results.html"><img src="icons/magnGlass.png" id="magnGlass"></a></span>
+                            <span><input type="text"  id="search" value=" Search..." onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" style="color: #8e8e8e;"></span>
+                            
+                            <span class="p-2 my-flex-item"><a href="dummyPage.html"><img src="icons/notifications.png" id="notifications"></a></span>
+                            <span class="p-2 my-flex-item"><a href="dummyPage.html"><img src="icons/UserIcon.png" id="userIcon"></a></span>
+                            </div>
+                        </span>
+                    <script>
+                        var input = document.getElementById("search");
+                        input.addEventListener("keyup", function(event) {
+                            event.preventDefault();
+                            if (event.keyCode === 13) {
+                                window.open("search-results.html","_self");
+                                console.log("open");
+                            }
+                        });
+                    </script>
+            </div>
+    
+    
+    
+            <nav>
+                <button ><a href="homeResponsive.html">HOME</a></button>
+                <button><a href="categories-page.html">MOVIES</a></button>
+                <button id="highlight"><a href="categories-page-shows.html">SHOWS</a></button>
+                <button><a href="categories-page-streams.html">STREAMS</a></button>
+                <button><a href="dummyPage.html">NEWS & EVENTS</a></button>
+            </nav>
+
+
+
+
+            <div>
+       
+        
+
+
+
+            <div class="d-flex flex-row" style="margin-top: 180px; margin-bottom: 100px;">
+        
+
+            
+                <div class="p2 mediaPlayer" style="margin-top: 200px;">
+                        
+                        <div style="margin-left: -1%;">
+                            <img id="darkhour" src="Covers/Game_of_thrones_cover.png">
+                        </div>
+                        
+                </div>
+
+                <div class="p2 d-flex flex-column" style="width: 1000px;" >
+
+                    <div class="p-2 d-flex flex-row justify-content-between">
+
+                        <div class="p-2 d-flex flex-column">
+                            <div class="p-2 " style="margin-top: -27px; margin-bottom: -20px; margin-left: 30px;"><h1 style="font-size: 45px;">Game of Thrones</h1></div>
+                            <div class="p-2" style="margin-left: 30px;"><h3>(2011)</h3></div>
+                        </div>
+
+                        <div class="p-2" style="margin-top:8px; margin-left: 315px;">
+                            <p style="font-size: 20px;">86%</p>
+                        </div>
+
+
+                        <div class="p-2 " style="margin-top:-0.5%;  ">
+                            
+                            <div id="starPos">
+                                <div class="rating">
+
+                                    <button id="1" class="star"><img id="star1" src='icons/starChecked.png'></button>
+                                    <button id="2" class="star"><img id="star2" src='icons/starChecked.png'></button>
+                                    <button id="3" class="star"><img id="star3" src='icons/starChecked.png'></button>
+                                    <button id="4" class="star"><img id="star4" src="icons/star.png"></button>
+                                    <button id="5" class="star"><img id="star5" src="icons/star.png"></button>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                </div>
+                            </div>    
+                        </div>
+
+                    </div>
+
+                    <div class="p-2" style="margin-left: 50px; width: 990px;"> 
+                        <p id="brief">Set on the fictional continents of Westeros and Essos, Game of Thrones has several plot lines and a large ensemble cast but centers on three primary story arcs.
+                            <span id="hiddenText" style="display: none;"> The first story arc centers on the Iron Throne of the Seven Kingdoms and follows a web of alliances and conflicts among the dynastic noble families either vying to claim the throne or fighting for independence from the throne. The second story arc focuses on the last descendant of the realm's deposed ruling dynasty, exiled and plotting a return to the throne. The third story arc centers on the longstanding brotherhood charged with defending the realm against the ancient threats of the fierce peoples and legendary creatures that lie far north, and an impending winter that threatens the realm.</span>
+                        </p>
+                    </div>
+
+                    <div class="p-2" style="margin-bottom: 3%;">
+                        <button id="downarrow"><img id="toggleArrow" src="icons/arrowDown.png"></button>
+                    </div>
+
+                    <div class="p-2 justify-content-bottom" style="margin-left: 50px;">
+                            <p>
+                                <span class="grey">Genres: </span> <a href="dummyPage.html" class= "yellow-hover"> Action </a><span class="grey"> , </span><a href="dummyPage.html" class= "yellow-hover"> Adventure </a><span class="grey"> , </span><a href="dummyPage.html" class= "yellow-hover"> Drama </a><br>
+                                <span class="grey">Creators: </span> <a href="dummyPage.html" class= "yellow-hover"> David Benioff </a><span class="grey"> , </span><a href="dummyPage.html" class= "yellow-hover"> D.B. Weiss </a><br>
+                                <span class="grey">Cast: </span> <a href="dummyPage.html" class= "yellow-hover"> Peter Dinklage </a><span class="grey"> , </span><a href="dummyPage.html" class= "yellow-hover"> Emilia Clarke </a><span class="grey"> , </span><a href="dummyPage.html" class= "yellow-hover"> Kit Harington </a><span class="grey"> , </span><a href="dummyPage.html" class= "yellow-hover"> Lena Headey </a>
+                            </p>
+                    </div>
+
+                </div>
+
+            
+            </div>
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="row playerContainer">
+
+                <div class="col-7" style="margin-top: 60px;">
+                        <div><h3 id="watchNow">Watch Now</h3></div>
+                        <div>
+                            <div class="navbar">
+                                <div style="width:160px;">
+                                <div class="dropdown">
+                                        <button onclick="myFunction()" class="dropbtn">Season:</button>
+                                        <button onclick="myFunction()" class="dropbtn" id="change1">4 </button>
+                                         <img class="arrow" onclick="myFunction()" src="icons/ic_arrow_drop_down_white_24px.png">
+                                      <div id="myDropdown" class="dropdown-content">
+                                            <button onclick="myf(this.id, 'change1')" id="home">4</button>
+                                            <button onclick="myf(this.id, 'change1')" id="about">3</button>
+                                            <button onclick="myf(this.id, 'change1')" id="contact">2</button>
+                                            <button onclick="myf(this.id, 'change1')" id="war">1</button>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div style="width:160px;">
+                                <div class="dropdown">
+                                    <button onclick="myFunction2()" class="dropbtn">Episode:</button>
+                                    <button  onclick="myFunction2()" class="dropbtn" id="change2">4</button> 
+                                    <img class="arrow" onclick="myFunction2()" src="icons/ic_arrow_drop_down_white_24px.png">
+                                        <div id="myDropdown2" class="dropdown-content">
+                                            <button onclick="myf(this.id, 'change2')" id="home2">4</button>
+                                            <button onclick="myf(this.id, 'change2')" id="about2">3</button>
+                                            <button onclick="myf(this.id, 'change2')" id="contact2">2</button>
+                                            <button onclick="myf(this.id, 'change2')" id="contact3">1</button>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                        <div class="moviePlayer">
+                                <div class="row">
+                                    <div class="col-3"><h3 id="usrMovInfo">1h 10 min <br> <span id="un">un</span>watched</h3></div>
+                                    <div class="col-9"><button id="heartBtn"><img id="heart" src="icons/heart.png"></button></div>
+                                </div>
+                                <button id="movb"  class="videoPlayButton"  onclick="playVid2(this)" type="button"><img id= "trailerPlay" src="icons/playButton.png"/></button>
+                                <video id="movie" width="1084px" poster="covers/Game of thrones.png" > 
+                                    <source src="darkest.mp4" type="video/mp4">
+                                    Your browser does not support HTML5 video.
+                                </video>
+                        </div>
+                        <img id="polyg" src="icons/Polygon.png">
+
+                       
+                </div>
+
+                <div class="col-5" style="margin-top: 60px;">
+                    
+
+                        <div style = "margin-left: 50px";>
+                                <div style="margin-top:7px;"><h3 style="font-size:36px;">Media Gallery</h3></div>
+                                
+                                  <div class="your-class" style="top: 3px;">
+                                    <div>
+                                        <div><img onclick="img1Click()" id="myImg1" class= "cover"  src="media/media7.png" ></div>
+                                    </div>
+                                    <div>
+                                        <div><img onclick="img2Click()" id="myImg2" class= "cover"  src="media/media8.png" ></div>
+                                    </div>
+                                    <div>
+                                        <div><img onclick="img3Click()" id="myImg3" class= "cover"  src="media/media9.png" ></div>
+                                    </div>
+                                    <div>
+                                        <div><img onclick="img4Click()" id="myImg4" class= "cover"  src="media/media10.png" ></div>
+                                    </div>
+                                    <div>
+                                        <div><img onclick="img5Click()" id="myImg5" class= "cover"  src="media/media11.png" ></div>
+                                    </div>
+                                    <div>
+                                        <div><img onclick="img6Click()" id="myImg6" class= "cover"  src="media/media12.png" ></div>
+                                    </div>
+                                        <div>
+                                            <div><img onclick="img1Click()" id="myImg1" class= "cover"  src="media/media7.png" ></div>
+                                        </div>
+                                        <div>
+                                            <div><img onclick="img2Click()" id="myImg2" class= "cover"  src="media/media8.png" ></div>
+                                        </div>
+                                        <div>
+                                            <div><img onclick="img3Click()" id="myImg3" class= "cover"  src="media/media9.png" ></div>
+                                        </div>
+                                        <div>
+                                            <div><img onclick="img4Click()" id="myImg4" class= "cover"  src="media/media10.png" ></div>
+                                        </div>
+                                        <div>
+                                            <div><img onclick="img5Click()" id="myImg5" class= "cover"  src="media/media11.png" ></div>
+                                        </div>
+                                        <div>
+                                            <div><img onclick="img6Click()" id="myImg6" class= "cover"  src="media/media12.png" ></div>
+                                        </div>
+                                  </div>
+                        </div>
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+        </div>
+
+        
+        
+          <div id="myModal1" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01" src="media/original/media7.jpg">
+            <div id="caption"></div>
+          </div>
+          <div id="myModal2" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img02" src="media/original/media8.jpg">
+            <div id="caption"></div>
+          </div>
+          <div id="myModal3" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img03" src="media/original/media9.jpg">
+            <div id="caption"></div>
+          </div>
+          <div id="myModal4" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img04" src="media/original/media10.jpg">
+            <div id="caption"></div>
+          </div>
+          <div id="myModal5" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img05" src="media/original/media11.jpg">
+            <div id="caption"></div>
+          </div>
+          <div id="myModal6" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img06" src="media/original/media12.jpg">
+            <div id="caption"></div>
+          </div>
+
+
+          <div class="d-flex flex-row" style="margin-top: 0px; margin-bottom: 100px;">
+        
+            
+            
+            <div class="p2 mediaPlayer" style="margin-top: 120px;">
+
+                    <div style="margin-left: -1%;">
+                        <button id="trailb"  class="videoPlayButton"  onclick="playVid(this)" type="button"><img src="icons/playButton.png"/></button>
+                        <video id="trailer"  width="600px" poster="covers/Game of thrones.png" > 
+                           <source src="darkest.mp4" type="video/mp4">
+                            Your browser does not support HTML5 video.
+                        </video>
+                        <div style="margin-left: 20px;"><p>Episode Teaser</p></div>
+                    </div>
+                    
+            </div>
+
+            <div class="p2 d-flex flex-column" style="width: 1300px;" >
+
+                <div class="p-2 d-flex flex-row justify-content-between">
+
+                    <div class="p-2 d-flex flex-column">
+                        <div class="p-2 " style="margin-top: -105px; margin-bottom: -20px; margin-left: 30px;"><h1 style="font-size: 45px;"><span id="episodeTitle">The Dragon and the Wolf</span></h1></div>
+                        <div class="p-2" style="margin-left: 30px;"><h3>(March 11 2017)</h3></div>
+                    </div>
+
+                    <div class="p-2" style="margin-top:-80px; margin-left: 400px;">
+                        <p id="thesi" style="font-size: 20px;">86%</p>
+                        <div id="starPos2">
+                                <div class="rating">
+    
+                                    <button id="6" class="star"><img id="star6" src='icons/starChecked.png'></button>
+                                    <button id="7" class="star"><img id="star7" src='icons/starChecked.png'></button>
+                                    <button id="8" class="star"><img id="star8" src='icons/starChecked.png'></button>
+                                    <button id="9" class="star"><img id="star9" src="icons/star.png"></button>
+                                    <button id="10" class="star"><img id="star10" src="icons/star.png"></button>
+                                    
+                                    
+                                </div>
+                            </div> 
+                    </div>
+
+
+                    <div class="p-2 " style="margin-top:-0.5%;  ">
+                        
+                         
+                    </div>
+
+                </div>
+
+                <div class="p-2" style="margin-left: 50px; width: 990px;"> 
+                         
+                    <p id="brief">At King's Landing, the wight is presented to the Lannisters. Cersei demands Jon's neutrality in the Great War, but he upholds his oath to Daenerys, provoking Cersei to leave. Tyrion meets privately with Cersei, apparently persuading her to ally. Cersei later reveals to Jaime that she was lying and instead intends to use the Golden Company of Braavos to secure her hold on Westeros.
+                        <span id="hiddenText1" style="display: none;"> Disgusted, Jaime deserts her and rides north. Bound for White Harbor, Jon and Daenerys make love. At Dragonstone, Theon earns the respect of his men and leads them to rescue Yara. </span>
+                    </p>
+                   
+                    
+                </div>
+
+                <div class="p-2" style="margin-bottom: 3%;">
+                    <button id="downarrow1"><img id="toggleArrow1" src="icons/arrowDown.png"></button>
+                </div>
+
+                
+
+            </div>
+
+        
+        </div>
+
+          
+        <div style="margin-left:150px; margin-top: 200px; margin-bottom:150px;">
+            <div><h3 id="similar">Similar Shows</h3></div>
+            <div  style="width: 1600px; position: relative;">
+              <div><img class= "cover1 blurr3"  src="icons/Rectangle 2.png"></div>
+                <div class="your-class2" style="top: -120px;">
+                    <div><a href="productShows.html">
+                            <div><img class= "coverDown"  src="Covers/Atomic Blonde.jpeg"></div>
+                            <p id="wolo123"> Atomic Blonde </p>
+                            <p id="wolo321">2017</p>
+                            <p id="wolo111">86%</p>
+                        </a>
+                    </div>
+                    <div><a href="productShows.html">
+                        <div><img class= "coverDown"  src="Covers/Beauty and the Beast Cover.jpeg"></div>
+                        <p id="wolo123"> Beauty and the Beast </p>
+                        <p id="wolo321">2018</p>
+                        <p id="wolo111">86%</p>
+                        </a>
+                    </div>
+                    <div><a href="productShows.html">
+                        <div><img class= "coverDown"  src="Covers/Blade Runner 2049 Cover.jpg"></div>
+                        <p id="wolo123"> Blade Runner 2049 </p>
+                        <p id="wolo321">2018</p>
+                        <p id="wolo111">86%</p>
+                        </a>
+                    </div>
+                    <div><a href="productShows.html">
+                        <div><img class= "coverDown"  src="Covers/Dunkirk.jpg"></div>
+                        <p id="wolo123"> Dunkirk </p>
+                        <p id="wolo321">2018</p>
+                        <p id="wolo111">86%</p>
+                        </a>
+                    </div>
+                    <div><a href="productShows.html">
+                        <div><img class= "coverDown"  src="Covers/Pulp Fiction Cover.jpg"></div>
+                        <p id="wolo123"> Pulp Fiction </p>
+                        <p id="wolo321">2020</p>
+                        <p id="wolo111">86%</p>
+                        </a>
+                    </div>
+                    <div><a href="productShows.html">
+                        <div><img class= "coverDown"  src="Covers/I,Tonya.jpg"></div>
+                        <p id="wolo123"> I,Tonya </p>
+                        <p id="wolo321">2018</p>
+                        <p id="wolo111">86%</p>
+                        </a>
+                    </div>
+                    <div><a href="productShows.html">
+                        <div><img class= "coverDown"  src="Covers/SpiderMan Cover.jpg"></div>
+                        <p id="wolo123"> Spiderman Homecoming </p>
+                        <p id="wolo321">2018</p>
+                        <p id="wolo111">86%</p>
+                        </a>
+                    </div>
+                    <div><a href="productShows.html">
+                        <div><img class= "coverDown"  src="Covers/Resident Evil Cover.jpg"></div>
+                        <p id="wolo123"> Resident Evil </p>
+                        <p id="wolo321">2017</p>
+                        <p id="wolo111">86%</p>
+                        </a>
+                    </div>
+                    <div><a href="productShows.html">
+                        <div><img class= "coverDown"  src="Covers/Lady Bird.jpg"></div>
+                        <p id="wolo123"> Lady Bird </p>
+                        <p id="wolo321">2018</p>
+                        <p id="wolo111">86%</p>
+                        </a>
+                    </div>
+                    <div><a href="productShows.html">
+                        <div><img class= "coverDown"  src="Covers/Jurassic Park Cover.jpg"></div>
+                        <p id="wolo123"> Jurassic Park </p>
+                        <p id="wolo321">2018</p>
+                        <p id="wolo111">86%</p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    
+
+
+
+        <div>
+           <footer  class="center">
+            
+
+                <div class="d-flex flex-row justify-content-between my-flex-container">
+                        
+                        <span class="p-2 my-flex-item">
+                            <span class="p-2 mr-auto my-flex-item" >
+                                 <span ><a href="dummyPage.html"><img src="icons/applelogo.png" style="width:50px; margin-top: 2px; " ></a></span>
+                                 <span ><a href="dummyPage.html"><img src="icons/playstore.png" style="width:50px; margin-top: 2px; margin-right: -15%; margin-left: 15%" ></a></span>
+                             </span>
+                        </span>
+                        
+                        <span class="p-2 my-flex-item" style = "margin-top: 15px; margin-left: 40px;" >
+                            <span class="p-2  my-flex-item"  >Lumiere Ltd. All Rights reserved</span>
+                        </span>
+
+                        <span class="p-2 my-flex-item">
+                            <span class="p-2 my-flex-item" style="padding: 5%">
+                                <span ><a href="dummyPage.html"><img src="icons/facebook.png" style="width:50px; margin-top: 2px; margin-left: -30%; margin-right: 10%" ></a></span>
+                                <span ><a href="dummyPage.html"><img src="icons/instagram.png" style="width:50px; margin-top: 2px; margin-right: 10%;" ></a></span>
+                                <span ><a href="dummyPage.html"><img src="icons/twitter.png" style="width:50px; margin-top: 2px;" ></a></span>
+                            </span>
+                        </span>
+
+                </div>
+
+
+            
+            </footer>
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slickProductGallery/slick.min.js"></script>
+    
+    
+    
+    <script type="text/javascript" src="modalImage.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script> 
+            var vid = document.getElementById("trailer");
+            var mov = document.getElementById("movie");
+            
+            function playVid(button) { 
+                button.style.visibility = "hidden";
+                vid.play(); 
+            } 
+
+            function playVid2(button) { 
+                button.style.visibility = "hidden";
+                mov.play(); 
+            } 
+            
+
+
+            
+            $('#trailer').hover(function toggleControls() {
+        
+                if (this.hasAttribute("controls")) {
+                this.removeAttribute("controls");                
+                } 
+                else {
+                    if (! trailer.paused){
+                        this.setAttribute("controls", "controls");}
+                }
+            });
+
+
+            $('#trailer').on('pause', function() {
+            
+                if (this.hasAttribute("controls")) {
+                this.removeAttribute("controls");                
+                } 
+                
+                var playbt = document.getElementById("trailb");
+                playbt.style.visibility = "visible";
+                
+
+            });
+
+
+            $('#movie').hover(function toggleControls() {
+                
+                if (this.hasAttribute("controls")) {
+                this.removeAttribute("controls");                
+                } 
+                else {
+                if (! movie.paused){
+                this.setAttribute("controls", "controls");}
+                }
+            });
+
+
+             $('#movie').on('pause', function() {
+
+                document.getElementById("heartBtn").style.visibility="visible";
+                document.getElementById("usrMovInfo").style.visibility="visible";
+    
+                if (this.hasAttribute("controls")) {
+                this.removeAttribute("controls");                
+                } 
+        
+                var playbt2 = document.getElementById("movb");
+                playbt2.style.visibility = "visible";
+                
+        
+
+                });
+
+
+            $('#movie').on('play', function() {
+    
+                document.getElementById("heartBtn").style.visibility="hidden";
+                document.getElementById("usrMovInfo").style.visibility="hidden";
+                document.getElementById("un").style.display="none";
+
+            });
+
+
+            $('trailb').on('hover', function(){
+
+                (document).getElementById("trailerPlay").src = "icons/playButtonSelected.png";
+
+            });
+        </script>
+        
+        
+        <script>
+       
+       
+       
+       $(document).ready(function(){
+            var flag = 0;
+            var flag2 = 1;  
+            $("button#downarrow").click(function(){
+                
+                var text = document.getElementById("hiddenText");
+
+                if (text.style.display === "none") {
+                    text.style.display = "block";
+                    
+                    
+                    
+
+                } else {
+                text.style.display = "none";
+                }
+
+
+                if(flag == 0) {
+                    $("#toggleArrow").attr("src","icons/arrowUp.png");
+                    flag = 1;
+                }
+                else if(flag == 1) {
+                    $("#toggleArrow").attr("src","icons/arrowDown.png");
+                    flag = 0;
+                }
+             });
+
+
+             $("button#heartBtn").click(function(){
+                
+                if(flag2 == 0) {
+                    $("#heart").attr("src","icons/heart.png");
+                    flag2 = 1;
+                }
+                else if(flag2 == 1) {
+                    $("#heart").attr("src","icons/heartChecked.png");
+                    flag2 = 0;
+                }
+             });
+
+
+
+        });
+
+        </script>
+
+
+  
+<script>
+       
+       
+       
+    $(document).ready(function(){
+         var flag = 0;
+         var flag2 = 1;  
+         $("button#downarrow1").click(function(){
+             
+             var text = document.getElementById("hiddenText1");
+
+             if (text.style.display === "none") {
+                 text.style.display = "block";
+                 
+                 
+                 
+
+             } else {
+             text.style.display = "none";
+             }
+
+
+             if(flag == 0) {
+                 $("#toggleArrow1").attr("src","icons/arrowUp.png");
+                 flag = 1;
+             }
+             else if(flag == 1) {
+                 $("#toggleArrow1").attr("src","icons/arrowDown.png");
+                 flag = 0;
+             }
+          });
+        });
+
+ </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script  type="text/javascript">
+    $(document).ready(function(){ 
+    $('.your-class').slick({
+        dots:true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        rows:2,
+        dots: true,
+        responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '30px',
+            slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '30px',
+            slidesToShow: 1
+            }
+        }
+        ]
+    });
+});
+
+
+
+  </script>
+
+
+
+
+
+
+
+<script  type="text/javascript">
+    $(document).ready(function(){
+    $('.your-class2').slick({
+        dots:true,
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '30px',
+            slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '30px',
+            slidesToShow: 1
+            }
+        }
+        ]
+    });
+});
+
+
+
+  </script>
+
+<script>
+$(".star").click(function(){
+
+    var num = this.id;
+
+    if (this.id <6){
+        for(i = 1; i <= 5; i++) {
+            if($("#star" + String(i)).attr('src') === 'icons/starChecked.png'){
+                $("#star" + String(i)).attr('src','icons/star.png');
+            }
+    
+        }
+        for(i = 1; i <= num; i++) { 
+    
+            $("#star" + String(i)).attr('src','icons/starChecked.png');
+        } 
+    }else{
+
+        for(i = 6; i <= 10; i++) {
+            if($("#star" + String(i)).attr('src') === 'icons/starChecked.png'){
+                $("#star" + String(i)).attr('src','icons/star.png');
+            }
+    
+        }
+        for(i = 6; i <= num; i++) { 
+    
+            $("#star" + String(i)).attr('src','icons/starChecked.png');
+        } 
+    }
+
+
+
+    
+
+
+    
+
+
+    
+    console.log(this.id);
+
+
+
+});
+
+</script>
+
+<script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    function myFunction2() {
+        document.getElementById("myDropdown2").classList.toggle("show");
+    }
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn') && !event.target.matches('.arrow')) {
+    
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    
+    
+    function myf(btnId, here){
+    
+      
+        var btnText = document.getElementById(btnId).innerText;
+        var text = document.getElementById(here).innerHTML = btnText 
+        console.log(here);
+
+
+        if (document.getElementById("movie").getAttribute("poster") === "Covers/gotthumbalt1.jpg"){
+            document.getElementById("movie").setAttribute("poster","Covers/gotthumbalt2.jpg");
+            document.getElementById("episodeTitle").innerText = "The Red Wedding";
+        }else if(document.getElementById("movie").getAttribute("poster") === "Covers/gotthumbalt2.jpg"){
+
+            document.getElementById("movie").setAttribute("poster","Covers/Game of Thrones.png");
+            document.getElementById("episodeTitle").innerText = "The Dragon and the Wolf";
+
+
+        }else{
+
+            document.getElementById("movie").setAttribute("poster","Covers/gotthumbalt1.jpg");
+            document.getElementById("episodeTitle").innerText = "A Feast of Crows";
+            
+        }
+    
+    
+    }
+    
+    
+    
+    
+    
+    </script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,608 @@
+
+
+
+body{
+
+    width: 360px;
+   
+    font-family: 'Roboto', sans-serif;
+   
+    overflow-x: hidden;
+    background-color: #2A343D; 
+    
+    z-index: -1;
+}
+
+
+#blurr{
+    background-color: white;
+    position: fixed;
+    left: 0;
+    top:0;
+    opacity: 0.38;
+    display: none;
+    z-index: 3;
+    width: 360px;
+    height: 100%;
+}
+
+#nav1{
+    text-decoration: none;
+    position: absolute;
+    top:120px;
+    font-size: 18px;
+}
+#nav1:hover{
+    color:#F2C94C;
+}
+
+#nav2{
+    color:#F2C94C !important;
+    position: absolute;
+    top:170px;
+    font-size: 18px;
+
+}
+#nav3{
+    position: absolute;
+    top:220px;
+    font-size: 18px;
+
+}
+#nav4{
+    position: absolute;
+    top:270px;
+    font-size: 18px;
+
+}
+#nav5{
+    position: absolute;
+    top:320px;
+    font-size: 18px;
+
+}
+
+
+
+
+
+
+/*carousels Styles*/
+
+
+.cover{
+    width:102px;
+    height: 153px;
+}
+
+.carouselContainer{
+    position: relative;
+    margin-top: 130px;
+    margin-bottom: 35px;
+    top:10%;
+    left:3%;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+
+#wolo123{
+    margin-top: 10px;
+    margin-bottom: -3px;
+    white-space: nowrap; 
+    width: 100px;
+    text-overflow: ellipsis; 
+    overflow: hidden;
+    font-size: 14px;
+    color: #F2F2F2;
+}
+#wolo123:hover{
+    color: #F2C94C;
+}
+#play{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin-left:1.7% ;
+    margin-top:2.5%; 
+}
+
+#wolo321{
+    font-size: 13px;
+    color: #f2f2f2;
+}
+
+.cover1 {
+    width: 51px;
+    height: 153px;
+    float: left;
+}
+
+.blurr2{
+    position: absolute;
+    width: 51px;
+    height:153px;
+    top:250px;
+    left:300px;
+    filter:blur(9px);
+    opacity: 1;
+    z-index:1;
+    fill:black;
+    
+}
+
+.blurr3{
+    position: absolute;
+    width: 51px;
+    height:153px;
+    top:0px;
+    left:300px;
+    filter:blur(9px);
+    opacity: 1;
+    z-index:1;
+}
+
+#wolo111{
+    width: 0;
+    position: relative;
+    left: 75px;
+    top: -35px;
+    font-size: 13px;
+    color: #6FCF97;
+}
+
+
+#carousel{
+    margin-top:-70px;
+    width: 96%;
+    height: 180px;
+}
+
+#trendingMovies{
+    position: absolute;
+    top: -30px;
+    font-size: 18px;
+    color: #f2f2f2;
+}
+
+#carousel1{
+    margin-top:70px;
+    width: 96%;
+    height: 180px;
+}
+
+#trendingShows{
+    position: absolute;
+    top: 220px;
+    font-size: 18px;
+    color: #f2f2f2;
+}
+
+
+
+
+
+/*----------------------------------*/
+
+
+.sidebar{
+    height:100%;
+    width:200px;
+    background-color: black;
+    position:fixed!important;
+    z-index:3;
+    overflow:auto;
+    color: #f2f2f2;
+}
+
+
+theme{
+    color:#fff !important; 
+    background-color:black !important;
+   
+    
+
+}
+
+
+
+#Back{
+    display: inline-block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    bottom: 8px;
+    left: 15px;
+    z-index: 99;
+}
+#Home{
+    
+    display: inline-block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    bottom: 8px;
+    left: 170px;
+    z-index: 99;
+}
+
+
+
+
+
+
+
+
+#downarrow{
+
+    outline: 0;
+    border: 0;
+    background: transparent;
+}
+
+#downarrow:hover{
+
+cursor: pointer;
+}
+
+
+
+
+
+
+#logo{
+
+    margin-top: -10px;
+    margin-left:-10px;
+    margin-right: 50px;
+}
+
+
+
+
+#movTitles{
+
+    
+    color: #f1f1f1;
+}
+
+#movMainTitle{
+
+    font-size: 30px;
+}
+
+#movDescription{
+
+    font-size: 18px;
+    color: #f2f2f2;
+    
+}
+
+
+#movDescriptionHidden{
+
+    font-size: 18px;
+    color: #f2f2f2;
+    
+}
+
+#arrowHidden{
+
+    margin-left: 150px;
+    outline: 0;
+    background: transparent;
+    border: 0;
+}
+
+#arrowHidden:hover{
+    cursor: pointer;
+}
+
+#movDescriptionHidden, #arrowHidden{
+
+    display: none;
+}
+
+#heartBtn{
+    
+   position: absolute;
+   margin-top: 10px;
+   margin-left: 10px;
+   background: transparent;
+   outline: none;
+   border: none; 
+   z-index: 2;
+   width: 20px;
+}
+
+#heart{
+    width: 20px;
+    
+}
+
+#heart:hover{
+    cursor: pointer;
+}
+
+
+#trailb{
+    position: absolute;
+    top: 50px;
+    left: 120px;
+}
+
+
+#starPos{
+    position: relative;
+    top: -202px;
+    left:220px;
+    
+}
+
+button{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+ 
+.star{
+    z-index: 10;
+    margin-top: -3%;
+    
+    background-color: transparent;
+    border: none;
+    width: 20px;
+    
+  
+}
+#starPos img{
+    outline: none;
+}
+
+#starPos button{
+    outline: none;
+}
+
+
+#un{
+
+    display: inline-block;
+    
+}
+
+#watched{
+    position: relative;
+    top: 0px;
+    left:280px;
+    font-size: 12px;
+    color: #F2F2F2;
+}
+
+.iconButtons{
+    text-decoration: none;
+    background: transparent;
+    border: 0;
+    width:40px;
+    padding-left: -15px;
+}
+
+.iconButtons:hover{
+
+    cursor: pointer;
+
+}
+
+
+
+
+
+.pos{
+    position: absolute;
+    left:-10px;
+}
+
+
+.sidebar-box {
+    max-height:180px;
+    position: relative;
+    overflow: hidden;
+  }
+  .sidebar-box .read-more { 
+    position: absolute; 
+    bottom: 0px; 
+    left: 0;
+    width: 100%; 
+    text-align: center; 
+    margin: 0; padding: 30px 0; 
+      
+    /* "transparent" only works here because == rgba(0,0,0,0) */
+    background-image: linear-gradient(to bottom, transparent, #2a343d);
+  }
+
+
+
+
+
+
+
+.drawerBtn{
+
+    color: #f2f2f2;
+    margin-top: 1px;
+    
+    
+
+}
+#userphoto{
+    margin-top: -10px;
+    margin-left: 0px;
+}
+#Amy{
+    position: absolute;
+    left:100px;
+    font-size: 24px;
+    margin-top: -35px;
+    margin-left: 0px;
+}
+hr {
+    position: absolute;
+    top:130px;
+    display: block;
+    height: 1px;
+    border: 0;
+    right: 0;
+    width: 100%;
+    border-top: 2px solid #f2f2f2;
+    margin-top: -20px;
+    padding: 0;
+}
+
+.w3-button:hover{
+    color:#F2C94C!important;
+    background-color:transparent!important;
+}
+#web {
+    padding-left: 20px;
+}
+#insta{
+    padding-left: 110px;
+    padding-right: 10px;
+}
+#fb{
+    padding-right: 10px;
+}
+.iconsdw{
+    padding-top: 590px;
+}
+.yellow {
+    color: #F2C94C;
+}
+.white {
+    color: #f2f2f2;
+}
+a:hover{
+    cursor: pointer;
+}
+a, a:hover{
+
+    color: #f2f2f2;
+    outline: none;
+    
+}
+
+
+.grey{
+
+    color: #bdbdbd;
+}
+
+a, a:hover{
+
+    color: #f2f2f2;
+    outline: none; 
+}
+ 
+
+
+.icons{
+
+    margin-top: 15px;
+
+}
+
+.icons img{
+
+    
+    margin-left: 20px;
+
+}
+
+
+header {
+    width: 360px;
+    height: 52px;
+    background: #212121;
+    
+}
+
+
+header button{
+
+    margin-top: -10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#playerContainer{
+    position: relative;
+    width: 360px;
+    height: 203px;
+}
+
+#videoFade{
+
+    background-color: black;
+    opacity: 0.5;
+}
+
+.videoPlayButton{
+    z-index: 2;
+    position:absolute;
+    margin: auto;
+    background-color: Transparent;
+    border: none;
+    top:100px;
+    left: 130px;
+
+}
+
+.videoPlayButton:focus{
+    outline:0;
+}
+
+.videoPlayButton:hover{
+
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+
+    position: fixed;
+    background: #212121;
+    width: 360px;
+    height: 51px;
+    color: #f2f2f2;
+    bottom: 0px;
+    right:0px;
+    z-index: 6;
+    left:0px;
+}

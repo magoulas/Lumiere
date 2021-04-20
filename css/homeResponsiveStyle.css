@@ -1,0 +1,229 @@
+
+
+h1,p{
+
+    color: white;
+
+}
+
+h1{
+
+    font-size: 28px;
+    
+}
+
+
+
+
+.sides{
+
+    background-color: #212121;
+    width: 20%;
+    height: 734px;
+    
+
+}
+
+a{
+    outline: none;
+}
+
+.sides a:hover, .sides a p:hover{
+
+    color: #F2C94C;
+
+}
+
+.sides h1{
+
+    
+    margin: 15%;
+    margin-bottom: 20%;
+    font-size: 24px;
+    text-align: center;
+}
+
+.center1{
+    margin-left: 7.5%;
+}
+
+.center2{
+    margin-left:7.5%;
+}
+
+.tiles{
+
+    width: 169px;
+    height: 300px;
+
+}
+.font24{
+    font-size: 24px;
+}
+.font20 {
+    font-size: 20px;
+    
+    
+}
+.font18{
+    font-size: 18px;
+}
+.margin-bottom-3{
+    margin-bottom: -20%
+}
+.OnAir {
+    
+    color: #F2C94C;
+}
+.calicon{
+    width: 50px;
+    height: 50px;
+}
+#ShowMorecal{
+   margin-top: 4%;
+}
+#ShowMorenews{
+    margin-top: 34.5%;
+ }
+
+
+ .pawDown{
+     position: relative;
+     top:-35px;
+ }
+
+
+ 
+ .pawDown1{
+    position: relative;
+    top:-80px;
+}
+
+.icon-allign{
+    margin-top: 20px;
+    margin-right: -10px;
+}
+.film-allign{
+    margin-top: 5px;
+}
+.newsicon-allign{
+    margin-top: 6px;
+}
+
+
+
+
+
+
+
+
+.topMar4{
+
+    margin-top: 4%
+}
+
+.topMar1{
+
+    margin-top: 10%
+}
+
+
+
+.leftMar3{
+    margin-left: 7.5%;
+}
+
+.leftMar30percent{
+
+    margin-left: 30%;
+}
+
+
+.botMar1p9{
+
+    margin-bottom: 1.09%
+
+}
+
+.botMarMinus5{
+
+    margin-bottom: -7%
+}
+
+.botMar5{
+    margin-top: -0.5%;
+    margin-bottom: 1.2%;
+}
+
+
+.cover {
+    outline: hidden;
+
+    width: 169px;
+    height: 217px;
+    float: left;
+}
+
+.cover:hover{
+    border: 2px solid #F2C94C;
+}
+
+
+#wolo123{
+    position: absolute;
+    top:240px;
+    font-size: 24px;
+    color: #F2F2F2;
+    width: 169px;
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+    overflow: hidden;
+}
+
+#wolo123:hover{
+    color: #F2C94C;
+}
+
+#wolo321{
+    position: relative;
+    top:275px;
+    left: -170px;
+    display: inline;
+    font-size: 20px;
+    color: #f2f2f2;
+}
+
+#wolo111{
+    position: absolute;
+    top:275px;
+    margin-left: -85px;
+    font-size: 20px;
+    display: inline;
+    color: #6FCF97;
+}
+
+.carousel_size{
+    height: 300px;
+    width: 1000px;
+}
+
+.cover1{
+    outline: none;
+
+    width: 70px;
+    height: 217px;
+}
+
+
+
+.blurr2{
+    position: absolute;
+    left: 1040px;
+    filter:blur(9px);
+    opacity: 1;
+    z-index:1;
+}
+
+
+
+

@@ -1,0 +1,479 @@
+
+<!doctype html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="css/generalLayoutStyle.1.css">
+    <link rel="stylesheet" type="text/css" href="css/homeResponsiveStyle.css">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    
+
+
+    <link rel="stylesheet" type="text/css" href="slickHome/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slickHome/slick-theme.css"/>
+
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  
+  
+      <link rel="stylesheet" href="it-s-a-calendar-sort-of-thing2/css/style.css">			
+
+
+
+    <title>Lumiere | Home</title>
+  </head>
+
+
+
+
+  <body>
+    
+    <div class="container-fluid">
+
+    
+
+            <div class="d-flex flex-row flex-row my-flex-container">
+                    <span class="p-2  mr-auto my-flex-item"><span><a href="homeResponsive.html"><img id="logo" src="icons/Logo_figma.png"></a></span></span>
+                    <!--<span class="p-2 my-flex-item"><input type="text"  placeholder=" &#xf002; Search..." style="margin-top: 15%; font-family:FontAwesome"></span>-->
+    
+                    <span class="p-2 mt-auto my-flex-item">
+                    <div class="d-flex flex-row flex-row my-flex-container">
+                        <span id="searchenter" class="p-2 my-flex-item"><a href="search-results.html"><img src="icons/magnGlass.png" id="magnGlass"></a></span>
+                        <span><input type="text"  id="search" value=" Search..." onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" style="color: #8e8e8e;"></span>
+                        
+                        <span class="p-2 my-flex-item"><a href="dummyPage.html"><img src="icons/notifications.png" id="notifications"></a></span>
+                        <span class="p-2 my-flex-item"><a href="dummyPage.html"><img src="icons/UserIcon.png" id="userIcon"></a></span>
+                        </div>
+                    </span>
+                    <script>
+                        var input = document.getElementById("search");
+                        input.addEventListener("keyup", function(event) {
+                            event.preventDefault();
+                            if (event.keyCode === 13) {
+                                window.open("search-results.html","_self");
+                                console.log("open");
+                            }
+                        });
+                    </script>
+            </div>
+
+
+
+        <nav>
+
+            <button id="highlight"><a href="homeResponsive.html">HOME</a></button>
+            <button><a href="categories-page.html">MOVIES</a></button>
+            <button><a href="categories-page-shows.html">SHOWS</a></button>
+            <button><a href="categories-page-streams.html">STREAMS</a></button>
+            <button><a href="dummyPage.html">NEWS & EVENTS</a></button>
+        </nav>
+
+    
+
+
+
+        <div class="row allContent" >
+
+         <div class= "sides col-2" >
+            <h1>News Feed</h1>
+            <div class="row topMar1">
+                <div class= "col-3 newsicon-allign"><a href="dummyPage.html"><img src="icons/article-icon.png" width="50px" height="50px"></a></div>
+                <div class= "col-9 font20" style = "text-align: left "><a href="dummyPage.html"><p class="wrap2Lines">  Game of thrones Season 8 new photos </p></a></div>
+            </div>
+            <div class="row topMar1 ">
+                <div class= "col-3 newsicon-allign"><a href="dummyPage.html"><img src="icons/article-icon.png" width="50px" height="50px"></a></div>
+                <div class= "col-9 font20" style = "text-align: left "><a href="dummyPage.html"><p class="wrap2Lines"> Cannes Festival Nominees 2018 </p></a></div>
+            </div>
+            <div class="row topMar1">
+                <div class= "col-3 newsicon-allign"><a href="dummyPage.html"><img src="icons/article-icon.png" width="50px" height="50px"></a></div>
+                <div class= "col-9 font20" style = "text-align: left "><a href="dummyPage.html"><p class="wrap2Lines"> Gary Oldman Oscar Speech </p></a></div>
+            </div>
+            <div class="row topMar1">
+                <div class= "col-3 newsicon-allign"><a href="dummyPage.html"><img src="icons/article-icon.png" width="50px" height="50px"></a></div>
+                <div class= "col-9 font20" style = "text-align: left "><a href="dummyPage.html"><p class="wrap2Lines"> Hollywood goes #indie </p></a></div>
+            </div>
+            <div class="row topMar1">
+                <div class= "col-3 newsicon-allign"><a href="dummyPage.html"><img src="icons/article-icon.png" width="50px" height="50px"></a></div>
+                <div class= "col-9 font20" style = "text-align: left "><a href="dummyPage.html"><p class="wrap2Lines"> Di Caprio Foundation on new natural habitat </p></a></div>
+            </div>
+            <div id="ShowMorenews" class="center">
+                    <p><a href="dummyPage.html"> Show More </a></p>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+         <div class="col-8"  >
+            <h1 class="botMar5 leftMar3 ">Recommended Movies</h1> 
+            <div><img class= "cover1 blurr2"  src="icons/Rectangle 2.png"></div>
+            <div class="center1 carousel_size" >
+                <div><a href="productRespo.html">
+                <div><img class= "cover"  src="Covers/Atomic Blonde.jpeg"></div>
+                        <p id="wolo123"> Atomic Blonde </p>
+                        <p id="wolo321">2017</p>
+                        <p id="wolo111">86%</p>
+                 </a></div>
+                <div ><a href="productRespo.html">
+                <div><img class= "cover"  src="Covers/The Godfather Cover.jpg"></div>
+                        <p id="wolo123"> The Godfather </p>
+                        <p id="wolo321">1972</p>
+                        <p id="wolo111">86%</p>
+                </a></div>
+                <div ><a href="productRespo.html">
+                <div><img class= "cover"  src="Covers/red_baron cover.jpg"></div>
+                        <p id="wolo123"> The Red Baron </p>
+                        <p id="wolo321">2008</p>
+                        <p id="wolo111">86%</p>
+                </a></div>
+                <div ><a href="productRespo.html">
+                <div><img class= "cover"  src="Covers/Star wars new hope cover.jpg"></div>
+                        <p id="wolo123"> Star Wars Episode IV </p>
+                        <p id="wolo321">1997</p>
+                        <p id="wolo111">86%</p>
+                </a></div>
+                <div ><a href="productRespo.html">
+                <div><img class= "cover"  src="Covers/Atomic Blonde.jpeg"></div>
+                        <p id="wolo123"> Atomic Blonde </p>
+                        <p id="wolo321">1997</p>
+                        <p id="wolo111">86%</p>
+                    </a></div>
+                <div ><a href="productRespo.html">
+                <div><img class= "cover"  src="Covers/The Godfather Cover.jpg"></div>
+                        <p id="wolo123"> The Godfather </p>
+                        <p id="wolo321">1972</p>
+                        <p id="wolo111">86%</p>
+                </a></div>
+                <div ><a href="productRespo.html">
+                <div><img class= "cover"  src="Covers/red_baron cover.jpg"></div>
+                        <p id="wolo123"> The Red Barron </p>
+                        <p id="wolo321">2008</p>
+                        <p id="wolo111">86%</p>
+                </a></div>
+                <div ><a href="productRespo.html">
+                <div><img class= "cover"  src="Covers/Star wars new hope cover.jpg"></div>
+                        <p id="wolo123"> Star Wars Episode IV </p>
+                        <p id="wolo321">1997</p>
+                        <p id="wolo111">86%</p>
+                </a></div>
+                <div ><a href="productRespo.html">
+                <div><img class= "cover"  src="Covers/Atomic Blonde.jpeg"></div>
+                        <p id="wolo123"> Atomic Blonde </p>
+                        <p id="wolo321">2017</p>
+                        <p id="wolo111">86%</p>
+                </a></div>
+                <div ><a href="productRespo.html">
+                <div><img class= "cover"  src="Covers/The Godfather Cover.jpg"></div>
+                        <p id="wolo123"> The Godfather </p>
+                        <p id="wolo321">1972</p>
+                        <p id="wolo111">86%</p>
+                 </a>
+                </div>
+            </div>
+
+
+            <h1 class="botMar1p9 leftMar3 topMar4 ">Recommended Shows</h1> 
+            <div><img class= "cover1 blurr2"  src="icons/Rectangle 2.png"></div>
+            <div class="center2 carousel_size">
+                    <div><a href="productShows.html">
+                            <div><img class= "cover"  src="Covers/Stranger Things 2.jpg"></div>
+                                    <p id="wolo123"> Stranger Things </p>
+                                    <p id="wolo321">2017</p>
+                                    <p id="wolo111">86%</p>
+                             </a></div>
+                            <div ><a href="productShows.html">
+                            <div><img class= "cover"  src="Covers/West World.jpg"></div>
+                                    <p id="wolo123"> Westworld </p>
+                                    <p id="wolo321">2017</p>
+                                    <p id="wolo111">86%</p>
+                            </a></div>
+                            <div ><a href="productShows.html">
+                            <div><img class= "cover"  src="Covers/The Sopranos.jpg"></div>
+                                    <p id="wolo123"> The Sopranos </p>
+                                    <p id="wolo321">1999</p>
+                                    <p id="wolo111">86%</p>
+                            </a></div>
+                            <div ><a href="productShows.html">
+                            <div><img class= "cover"  src="Covers/The Walking Dead.jpg"></div>
+                                    <p id="wolo123"> The Walking Dead </p>
+                                    <p id="wolo321">2010</p>
+                                    <p id="wolo111">86%</p>
+                            </a></div>
+                            <div ><a href="productShows.html">
+                            <div><img class= "cover"  src="Covers/Dark Cover.jpg"></div>
+                                    <p id="wolo123"> The Dark </p>
+                                    <p id="wolo321">2017</p>
+                                    <p id="wolo111">86%</p>
+                                </a></div>
+                            <div ><a href="productShows.html">
+                            <div><img class= "cover"  src="Covers/Stranger Things 2.jpg"></div>
+                                    <p id="wolo123"> Stranger Things </p>
+                                    <p id="wolo321">2017</p>
+                                    <p id="wolo111">86%</p>
+                            </a></div>
+                            <div ><a href="productShows.html">
+                            <div><img class= "cover"  src="Covers/West World.jpg"></div>
+                                    <p id="wolo123"> West World </p>
+                                    <p id="wolo321">2017</p>
+                                    <p id="wolo111">86%</p>
+                            </a></div>
+                            <div ><a href="productShows.html">
+                            <div><img class= "cover"  src="Covers/The Sopranos.jpg"></div>
+                                    <p id="wolo123"> The Sopranos </p>
+                                    <p id="wolo321">1999</p>
+                                    <p id="wolo111">86%</p>
+                            </a></div>
+                            <div ><a href="productShows.html">
+                            <div><img class= "cover"  src="Covers/The Walking Dead.jpg"></div>
+                                    <p id="wolo123"> The Walking Dead </p>
+                                    <p id="wolo321">2010</p>
+                                    <p id="wolo111">86%</p>
+                            </a></div>
+                            <div ><a href="productShows.html">
+                            <div><img class= "cover"  src="Covers/Dark Cover.jpg"></div>
+                                    <p id="wolo123"> The Dark </p>
+                                    <p id="wolo321">2017</p>
+                                    <p id="wolo111">86%</p>
+                             </a></div>
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+
+        <div class= "sides col-2">
+            <div id="scl">
+                <html ng-app='calendarApp' ng-cloak='true'></html>
+                <div class='calendar' ng-controller='calendarController as calendar'>
+                  <div class='calendar_left'>
+                    <div class='header'>
+                      <i id="left" class='material-icons' ng-click='calendar.prev()'>navigate_before</i>
+                      <h1 id="upup">{{calendar.month}}</h1>
+                      <i id="right"class='material-icons' ng-click='calendar.next()'>navigate_next</i>
+                    </div>
+                    <div class="letsup">
+                    <div class='days lefto'>
+                      <div class='day_item'>Mon</div>
+                      <div class='day_item'>Tue</div>
+                      <div class='day_item'>Wed</div>
+                      <div class='day_item'>Thu</div>
+                      <div class='day_item'>Fri</div>
+                      <div class='day_item'>Sat</div>
+                      <div class='day_item'>Sun</div>
+                    </div>
+                    <div  class='dates  dts lefto'></div>
+                  </div>
+                </div>
+                </div>
+                  <script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js'></script>
+                <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+                <script src='http://code.angularjs.org/1.3.14/angular-animate.js'></script>
+                
+                  
+                
+                    <script  src="it-s-a-calendar-sort-of-thing2/js/index.js"></script>
+
+            </div>
+            <div>
+                <h1 class="pawDown">Events</h1>
+            </div>
+            <div class="pawDown1">
+            <div class="row">
+                <div class= "col-3 icon-allign"><a href="productStream.html"><img  src="icons/live-tv-white.png" width="45px" height="41px" ></a></div>
+                <span class= "col-9 font24 " style = "text-align: left "><a href="productStream.html"><p> GoT Se 8 Ep 1 </a><br><span class="font18 margin-bottom-3">OnAir:</span> <span  class="font18 margin-bottom-3 OnAir"><a href="productStream.html">14:00</a></span></p></span>
+                
+            </div>
+            <div class="row">
+                <div class= "col-3 icon-allign"><a href="productStream.html"><img  src="icons/live-tv-white.png" width="45px" height="41px" ></a></div>
+                <span class= "col-9 font24" style = "text-align: left "><a href="productStream.html"><p> Arrow: Se 6 E... </a><br><span class="font18 margin-bottom-3">OnAir:</span> <span class="font18 margin-bottom-3 OnAir">18:00</span></p></span>
+            </div>
+            <div class="row">
+                <div class= "col-3 icon-allign"><a href="productShows.html"><img  src="icons/tv-white.png" width="45px" height="41px" ></a></div>
+                <span class= "col-9 font24" style = "text-align: left "><a href="productShows.html"><p> Altered Carbon </a><br><span class="font18 margin-bottom-3 OnAir">(New Episode)</span></p></span>
+            </div>
+            <div class="row">
+                <div class= "col-3 film-allign"><a href="productRespo.html"><img  src="icons/film-white.png"  height="60px" ></a></div>
+                <span class= "col-9 font24" style = "text-align: left "><a href="productRespo.html"><p> Red Sparrow </a><br><span class="font18 margin-bottom-3 OnAir">(New Movie)</span></p></span>
+            </div>
+            <div id="ShowMorecal" class="center">
+                <p><a href="dummyPage.html"> Show More </a></p>
+            </div>
+        </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <div>
+                <footer  class="center">
+                 
+     
+                     <div class="d-flex flex-row justify-content-between my-flex-container">
+                             
+                             <span class="p-2 my-flex-item">
+                                 <span class="p-2 mr-auto my-flex-item" >
+                                      <span ><a href="dummyPage.html"><img src="icons/applelogo.png" style="width:50px; margin-top: 2px; " ></a></span>
+                                      <span ><a href="dummyPage.html"><img src="icons/playstore.png" style="width:50px; margin-top: 2px; margin-right: -15%; margin-left: 15%" ></a></span>
+                                  </span>
+                             </span>
+                             
+                             <span class="p-2 my-flex-item" style = "margin-top: 15px; margin-left: 40px;" >
+                                 <span class="p-2  my-flex-item"  >Lumiere Ltd. All Rights reserved</span>
+                             </span>
+     
+                             <span class="p-2 my-flex-item">
+                                 <span class="p-2 my-flex-item" style="padding: 5%">
+                                     <span ><a href="dummyPage.html"><img src="icons/facebook.png" style="width:50px; margin-top: 2px; margin-left: -30%; margin-right: 10%" ></a></span>
+                                     <span ><a href="dummyPage.html"><img src="icons/instagram.png" style="width:50px; margin-top: 2px; margin-right: 10%;" ></a></span>
+                                     <span ><a href="dummyPage.html"><img src="icons/twitter.png" style="width:50px; margin-top: 2px;" ></a></span>
+                                 </span>
+                             </span>
+     
+                     </div>
+     
+     
+                 
+                 </footer>
+             </div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slickHome/slick.min.js"></script>
+
+
+ 
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+    $('.center1').slick({
+        centerPadding: '30px',
+        slidesToShow: 4,
+        slidesToScroll:4,
+        dots:true,
+        responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '30px',
+            slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '30px',
+            slidesToShow: 1
+            }
+        }
+        ]
+    });
+});
+
+  </script>
+<script type="text/javascript">
+    $(document).ready(function(){ 
+        $('.center2').slick({
+            centerPadding: '30px',
+            slidesToShow: 4,
+            slidesToScroll:4,
+            dots:true,
+            responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '30px',
+                slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '30px',
+                slidesToShow: 1
+                }
+            }
+            ]
+        });
+    });
+    
+      </script>
+
+
+<script>
+
+    $(".dates").on("click",function(){
+
+        console.log("redegamiesai");
+
+        window.open("homeResponsive.html","_self");
+
+
+    }); 
+</script>
+
+
+
+</body>
+</html>

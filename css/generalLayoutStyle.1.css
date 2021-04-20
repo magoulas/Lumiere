@@ -1,0 +1,205 @@
+body {
+
+    font-family: 'Roboto', sans-serif;
+    background-color: #2A343D;
+    
+    
+
+}
+
+
+header h1{
+    padding-left: 73.69px;
+    font-family: 'Marema Typeface';
+    color: #F2C94C;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+
+}
+
+a:hover,a{
+    color: inherit;
+    text-decoration:none;  
+}
+
+#logo{
+
+    size: 100px;
+    width: 158px; 
+    margin-top: 20px;
+
+} 
+
+
+ #search{
+     margin-left: -2%;
+     width: 275px;
+     height: 26px;  
+     margin-top: 25px;
+     
+     
+}
+
+
+#magnGlass{
+
+    
+    padding: 2px;
+    width: 26px;
+    background-color: white;
+    margin-top: 17px;;
+    margin-right: -4px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+
+
+}
+
+
+
+
+
+
+
+#notifications{
+
+    width:40px; 
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+#userIcon{
+
+
+    width:60px; 
+    margin-bottom: 10px;
+    margin-left: 2px;
+}
+
+
+nav{
+    position: absolute;
+    max-width: 100%;
+    height: 94px;
+    left: 0px;
+    top: 92px;
+    background-color: #212121;
+
+    text-align: center; 
+    float: none; 
+    margin: auto; 
+    width: 100%;
+
+} 
+footer{
+
+    background-color: #212121;
+    
+
+}
+
+footer{
+    position:fixed; 
+    bottom:0;
+    left:0px;    
+    width:1920px;
+    height: 65px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    background-color: #212121;
+    color: #F2F2F2;
+    box-sizing: content-box;
+    z-index: 99;
+    
+}
+
+nav button{
+
+    background-color: #212121;
+    border: none;
+    color: #FFFFFF;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-size: 40px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+nav button:focus{
+    outline: 0px;
+}
+
+
+nav button:hover{
+    color: #F2C94C;
+}
+
+
+
+
+input {
+    border: 0;
+    background: white;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    padding-right: 1%;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    display: inline-block;
+    
+   
+  }
+  input:focus{
+    outline: 0;
+  }
+
+
+
+
+#highlight{
+    color: #F2C94C;
+}
+
+#main{
+    margin-top: 40px;
+    display: flex;
+    margin-bottom: 10px;
+}
+.center {
+    text-align: center;
+    align-content: center;
+    float: none;
+    margin: auto;
+    width: 100%;
+    z-index: 8;
+}
+
+
+
+.allContent{
+    margin-top: 3%;
+    margin-bottom:3%;
+    padding: 3%
+}
+
+
+
+.wrap2Lines{
+
+    line-height: 1.5em;
+    height: 3em;  
+    overflow: hidden; 
+}
+
+
+
+.color8e8e8e{
+
+    color: #8e8e8e;
+}
+
+
